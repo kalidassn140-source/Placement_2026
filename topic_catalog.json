@@ -1,0 +1,3926 @@
+[
+  {
+    "id": "coding_pf_basic",
+    "title": "Basic Coding Questions",
+    "category": "Coding Questions",
+    "group": "Programming Fundamentals",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_pf_vars",
+    "title": "Variables and Data Types",
+    "category": "Coding Questions",
+    "group": "Programming Fundamentals",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_pf_ops",
+    "title": "Operators",
+    "category": "Coding Questions",
+    "group": "Programming Fundamentals",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_pf_cond",
+    "title": "Conditional Statements",
+    "category": "Coding Questions",
+    "group": "Programming Fundamentals",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_pf_ifelse",
+    "title": "If-Else Statements",
+    "category": "Coding Questions",
+    "group": "Programming Fundamentals",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_pf_nestedif",
+    "title": "Nested If-Else",
+    "category": "Coding Questions",
+    "group": "Programming Fundamentals",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_pf_switch",
+    "title": "Switch Statements",
+    "category": "Coding Questions",
+    "group": "Programming Fundamentals",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_pf_loops",
+    "title": "Loops",
+    "category": "Coding Questions",
+    "group": "Programming Fundamentals",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_pf_for",
+    "title": "For Loop",
+    "category": "Coding Questions",
+    "group": "Programming Fundamentals",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_pf_while",
+    "title": "While Loop",
+    "category": "Coding Questions",
+    "group": "Programming Fundamentals",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_pf_dowhile",
+    "title": "Do-While Loop",
+    "category": "Coding Questions",
+    "group": "Programming Fundamentals",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_pf_breakcont",
+    "title": "Break and Continue",
+    "category": "Coding Questions",
+    "group": "Programming Fundamentals",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_pf_funcs",
+    "title": "Functions",
+    "category": "Coding Questions",
+    "group": "Programming Fundamentals",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_pf_params",
+    "title": "Function Parameters and Return Values",
+    "category": "Coding Questions",
+    "group": "Programming Fundamentals",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_pf_recursion",
+    "title": "Recursion",
+    "category": "Coding Questions",
+    "group": "Programming Fundamentals",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_pf_patterns",
+    "title": "Pattern Printing",
+    "category": "Coding Questions",
+    "group": "Programming Fundamentals",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_pf_numbers",
+    "title": "Number-Based Programs",
+    "category": "Coding Questions",
+    "group": "Programming Fundamentals",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_pf_mathprob",
+    "title": "Mathematical Programming Problems",
+    "category": "Coding Questions",
+    "group": "Programming Fundamentals",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_str_fund",
+    "title": "String Fundamentals",
+    "category": "Coding Questions",
+    "group": "String Programming",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_str_io",
+    "title": "String Input and Output",
+    "category": "Coding Questions",
+    "group": "String Programming",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_str_len",
+    "title": "String Length",
+    "category": "Coding Questions",
+    "group": "String Programming",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_str_rev",
+    "title": "String Reversal",
+    "category": "Coding Questions",
+    "group": "String Programming",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_str_palin",
+    "title": "Palindrome Strings",
+    "category": "Coding Questions",
+    "group": "String Programming",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_str_anagram",
+    "title": "Anagram Problems",
+    "category": "Coding Questions",
+    "group": "String Programming",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_str_freq",
+    "title": "Character Frequency",
+    "category": "Coding Questions",
+    "group": "String Programming",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_str_vowels",
+    "title": "Vowel and Consonant Problems",
+    "category": "Coding Questions",
+    "group": "String Programming",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_str_substr",
+    "title": "Substrings",
+    "category": "Coding Questions",
+    "group": "String Programming",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_str_search",
+    "title": "String Searching",
+    "category": "Coding Questions",
+    "group": "String Programming",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_str_sort",
+    "title": "String Sorting",
+    "category": "Coding Questions",
+    "group": "String Programming",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_str_manip",
+    "title": "String Manipulation",
+    "category": "Coding Questions",
+    "group": "String Programming",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_str_conv",
+    "title": "String Conversion",
+    "category": "Coding Questions",
+    "group": "String Programming",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_str_adv",
+    "title": "Advanced String Problems",
+    "category": "Coding Questions",
+    "group": "String Programming",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_arr_fund",
+    "title": "Array Fundamentals",
+    "category": "Coding Questions",
+    "group": "Arrays",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_arr_traversal",
+    "title": "Array Traversal",
+    "category": "Coding Questions",
+    "group": "Arrays",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_arr_insertion",
+    "title": "Array Insertion",
+    "category": "Coding Questions",
+    "group": "Arrays",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_arr_deletion",
+    "title": "Array Deletion",
+    "category": "Coding Questions",
+    "group": "Arrays",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_arr_search",
+    "title": "Array Searching",
+    "category": "Coding Questions",
+    "group": "Arrays",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_arr_sort",
+    "title": "Array Sorting",
+    "category": "Coding Questions",
+    "group": "Arrays",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_arr_minmax",
+    "title": "Maximum and Minimum Elements",
+    "category": "Coding Questions",
+    "group": "Arrays",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_arr_sec_large",
+    "title": "Second Largest Element",
+    "category": "Coding Questions",
+    "group": "Arrays",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_arr_dup",
+    "title": "Duplicate Elements",
+    "category": "Coding Questions",
+    "group": "Arrays",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_arr_freq",
+    "title": "Frequency Counting",
+    "category": "Coding Questions",
+    "group": "Arrays",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_arr_rev",
+    "title": "Array Reversal",
+    "category": "Coding Questions",
+    "group": "Arrays",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_arr_rot",
+    "title": "Rotation of Arrays",
+    "category": "Coding Questions",
+    "group": "Arrays",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_arr_2d",
+    "title": "Two-Dimensional Arrays",
+    "category": "Coding Questions",
+    "group": "Arrays",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_arr_matrix",
+    "title": "Matrix Operations",
+    "category": "Coding Questions",
+    "group": "Arrays",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_arr_subarr",
+    "title": "Subarrays",
+    "category": "Coding Questions",
+    "group": "Arrays",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_arr_prefix",
+    "title": "Prefix Sum",
+    "category": "Coding Questions",
+    "group": "Arrays",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_arr_slide",
+    "title": "Sliding Window",
+    "category": "Coding Questions",
+    "group": "Arrays",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_arr_twoptr",
+    "title": "Two-Pointer Technique",
+    "category": "Coding Questions",
+    "group": "Arrays",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_ds_fund",
+    "title": "Data Structure Fundamentals",
+    "category": "Coding Questions",
+    "group": "Data Structures",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_ds_stack",
+    "title": "Stack",
+    "category": "Coding Questions",
+    "group": "Data Structures",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_ds_stack_ops",
+    "title": "Stack Operations",
+    "category": "Coding Questions",
+    "group": "Data Structures",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_ds_queue",
+    "title": "Queue",
+    "category": "Coding Questions",
+    "group": "Data Structures",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_ds_circ_queue",
+    "title": "Circular Queue",
+    "category": "Coding Questions",
+    "group": "Data Structures",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_ds_prio_queue",
+    "title": "Priority Queue",
+    "category": "Coding Questions",
+    "group": "Data Structures",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_ds_deque",
+    "title": "Deque",
+    "category": "Coding Questions",
+    "group": "Data Structures",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_ds_singly_ll",
+    "title": "Singly Linked List",
+    "category": "Coding Questions",
+    "group": "Data Structures",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_ds_doubly_ll",
+    "title": "Doubly Linked List",
+    "category": "Coding Questions",
+    "group": "Data Structures",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_ds_circ_ll",
+    "title": "Circular Linked List",
+    "category": "Coding Questions",
+    "group": "Data Structures",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_ds_ll_ins",
+    "title": "Linked List Insertion",
+    "category": "Coding Questions",
+    "group": "Data Structures",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_ds_ll_del",
+    "title": "Linked List Deletion",
+    "category": "Coding Questions",
+    "group": "Data Structures",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_ds_ll_rev",
+    "title": "Linked List Reversal",
+    "category": "Coding Questions",
+    "group": "Data Structures",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_ds_hash_tbl",
+    "title": "Hash Tables",
+    "category": "Coding Questions",
+    "group": "Data Structures",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_ds_hash_map",
+    "title": "Hash Maps",
+    "category": "Coding Questions",
+    "group": "Data Structures",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_ds_sets",
+    "title": "Sets",
+    "category": "Coding Questions",
+    "group": "Data Structures",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_ds_trees",
+    "title": "Trees",
+    "category": "Coding Questions",
+    "group": "Data Structures",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_ds_bin_trees",
+    "title": "Binary Trees",
+    "category": "Coding Questions",
+    "group": "Data Structures",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_ds_bst",
+    "title": "Binary Search Trees",
+    "category": "Coding Questions",
+    "group": "Data Structures",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_ds_tree_trav",
+    "title": "Tree Traversal",
+    "category": "Coding Questions",
+    "group": "Data Structures",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_ds_heap",
+    "title": "Heap",
+    "category": "Coding Questions",
+    "group": "Data Structures",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_ds_graph_fund",
+    "title": "Graph Fundamentals",
+    "category": "Coding Questions",
+    "group": "Data Structures",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_ds_graph_rep",
+    "title": "Graph Representation",
+    "category": "Coding Questions",
+    "group": "Data Structures",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_ds_bfs",
+    "title": "Breadth-First Search (BFS)",
+    "category": "Coding Questions",
+    "group": "Data Structures",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_ds_dfs",
+    "title": "Depth-First Search (DFS)",
+    "category": "Coding Questions",
+    "group": "Data Structures",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_algo_fund",
+    "title": "Algorithm Fundamentals",
+    "category": "Coding Questions",
+    "group": "Algorithms",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_algo_time_comp",
+    "title": "Time Complexity",
+    "category": "Coding Questions",
+    "group": "Algorithms",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_algo_space_comp",
+    "title": "Space Complexity",
+    "category": "Coding Questions",
+    "group": "Algorithms",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_algo_big_o",
+    "title": "Big-O Notation",
+    "category": "Coding Questions",
+    "group": "Algorithms",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_algo_lin_search",
+    "title": "Linear Search",
+    "category": "Coding Questions",
+    "group": "Algorithms",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_algo_bin_search",
+    "title": "Binary Search",
+    "category": "Coding Questions",
+    "group": "Algorithms",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_algo_bubble_sort",
+    "title": "Bubble Sort",
+    "category": "Coding Questions",
+    "group": "Algorithms",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_algo_sel_sort",
+    "title": "Selection Sort",
+    "category": "Coding Questions",
+    "group": "Algorithms",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_algo_ins_sort",
+    "title": "Insertion Sort",
+    "category": "Coding Questions",
+    "group": "Algorithms",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_algo_merge_sort",
+    "title": "Merge Sort",
+    "category": "Coding Questions",
+    "group": "Algorithms",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_algo_quick_sort",
+    "title": "Quick Sort",
+    "category": "Coding Questions",
+    "group": "Algorithms",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_algo_heap_sort",
+    "title": "Heap Sort",
+    "category": "Coding Questions",
+    "group": "Algorithms",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_algo_count_sort",
+    "title": "Counting Sort",
+    "category": "Coding Questions",
+    "group": "Algorithms",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_algo_radix_sort",
+    "title": "Radix Sort",
+    "category": "Coding Questions",
+    "group": "Algorithms",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_algo_twoptr",
+    "title": "Two-Pointer Algorithms",
+    "category": "Coding Questions",
+    "group": "Algorithms",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_algo_sliding_win",
+    "title": "Sliding Window Algorithms",
+    "category": "Coding Questions",
+    "group": "Algorithms",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_algo_greedy",
+    "title": "Greedy Algorithms",
+    "category": "Coding Questions",
+    "group": "Algorithms",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_algo_dp",
+    "title": "Dynamic Programming",
+    "category": "Coding Questions",
+    "group": "Algorithms",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_algo_backtrack",
+    "title": "Backtracking",
+    "category": "Coding Questions",
+    "group": "Algorithms",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_algo_div_conq",
+    "title": "Divide and Conquer",
+    "category": "Coding Questions",
+    "group": "Algorithms",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_algo_graphs",
+    "title": "Graph Algorithms",
+    "category": "Coding Questions",
+    "group": "Algorithms",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_algo_shortest_path",
+    "title": "Shortest Path Algorithms",
+    "category": "Coding Questions",
+    "group": "Algorithms",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_sql_db_fund",
+    "title": "Database Fundamentals",
+    "category": "Coding Questions",
+    "group": "Database and SQL",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_sql_dbms",
+    "title": "DBMS",
+    "category": "Coding Questions",
+    "group": "Database and SQL",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_sql_rdbms",
+    "title": "RDBMS",
+    "category": "Coding Questions",
+    "group": "Database and SQL",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_sql_fund",
+    "title": "SQL Fundamentals",
+    "category": "Coding Questions",
+    "group": "Database and SQL",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_sql_ddl",
+    "title": "DDL Commands",
+    "category": "Coding Questions",
+    "group": "Database and SQL",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_sql_dml",
+    "title": "DML Commands",
+    "category": "Coding Questions",
+    "group": "Database and SQL",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_sql_dcl",
+    "title": "DCL Commands",
+    "category": "Coding Questions",
+    "group": "Database and SQL",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_sql_tcl",
+    "title": "TCL Commands",
+    "category": "Coding Questions",
+    "group": "Database and SQL",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_sql_select",
+    "title": "SELECT Queries",
+    "category": "Coding Questions",
+    "group": "Database and SQL",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_sql_where",
+    "title": "WHERE Clause",
+    "category": "Coding Questions",
+    "group": "Database and SQL",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_sql_order_by",
+    "title": "ORDER BY",
+    "category": "Coding Questions",
+    "group": "Database and SQL",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_sql_group_by",
+    "title": "GROUP BY",
+    "category": "Coding Questions",
+    "group": "Database and SQL",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_sql_having",
+    "title": "HAVING Clause",
+    "category": "Coding Questions",
+    "group": "Database and SQL",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_sql_agg_funcs",
+    "title": "Aggregate Functions",
+    "category": "Coding Questions",
+    "group": "Database and SQL",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_sql_joins",
+    "title": "Joins",
+    "category": "Coding Questions",
+    "group": "Database and SQL",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_sql_inner_join",
+    "title": "Inner Join",
+    "category": "Coding Questions",
+    "group": "Database and SQL",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_sql_left_join",
+    "title": "Left Join",
+    "category": "Coding Questions",
+    "group": "Database and SQL",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_sql_right_join",
+    "title": "Right Join",
+    "category": "Coding Questions",
+    "group": "Database and SQL",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_sql_full_join",
+    "title": "Full Outer Join",
+    "category": "Coding Questions",
+    "group": "Database and SQL",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_sql_subqueries",
+    "title": "Subqueries",
+    "category": "Coding Questions",
+    "group": "Database and SQL",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_sql_nested_q",
+    "title": "Nested Queries",
+    "category": "Coding Questions",
+    "group": "Database and SQL",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_sql_pri_keys",
+    "title": "Primary Keys",
+    "category": "Coding Questions",
+    "group": "Database and SQL",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_sql_for_keys",
+    "title": "Foreign Keys",
+    "category": "Coding Questions",
+    "group": "Database and SQL",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_sql_constraints",
+    "title": "Constraints",
+    "category": "Coding Questions",
+    "group": "Database and SQL",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_sql_norm",
+    "title": "Normalization",
+    "category": "Coding Questions",
+    "group": "Database and SQL",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_sql_indexes",
+    "title": "Indexes",
+    "category": "Coding Questions",
+    "group": "Database and SQL",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_sql_views",
+    "title": "Views",
+    "category": "Coding Questions",
+    "group": "Database and SQL",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_sql_stored_proc",
+    "title": "Stored Procedures",
+    "category": "Coding Questions",
+    "group": "Database and SQL",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_sql_triggers",
+    "title": "Triggers",
+    "category": "Coding Questions",
+    "group": "Database and SQL",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_sql_er_diag",
+    "title": "ER Diagrams",
+    "category": "Coding Questions",
+    "group": "Database and SQL",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_sql_trans",
+    "title": "Transactions",
+    "category": "Coding Questions",
+    "group": "Database and SQL",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_sql_acid",
+    "title": "ACID Properties",
+    "category": "Coding Questions",
+    "group": "Database and SQL",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_oop_fund",
+    "title": "OOP Fundamentals",
+    "category": "Coding Questions",
+    "group": "Object-Oriented Programming",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_oop_class_obj",
+    "title": "Classes and Objects",
+    "category": "Coding Questions",
+    "group": "Object-Oriented Programming",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_oop_encap",
+    "title": "Encapsulation",
+    "category": "Coding Questions",
+    "group": "Object-Oriented Programming",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_oop_inherit",
+    "title": "Inheritance",
+    "category": "Coding Questions",
+    "group": "Object-Oriented Programming",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_oop_poly",
+    "title": "Polymorphism",
+    "category": "Coding Questions",
+    "group": "Object-Oriented Programming",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_oop_abstract",
+    "title": "Abstraction",
+    "category": "Coding Questions",
+    "group": "Object-Oriented Programming",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_oop_construct",
+    "title": "Constructors",
+    "category": "Coding Questions",
+    "group": "Object-Oriented Programming",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_oop_destruct",
+    "title": "Destructors",
+    "category": "Coding Questions",
+    "group": "Object-Oriented Programming",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_oop_fn_overload",
+    "title": "Function Overloading",
+    "category": "Coding Questions",
+    "group": "Object-Oriented Programming",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_oop_fn_override",
+    "title": "Function Overriding",
+    "category": "Coding Questions",
+    "group": "Object-Oriented Programming",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_oop_virtual_fn",
+    "title": "Virtual Functions",
+    "category": "Coding Questions",
+    "group": "Object-Oriented Programming",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_oop_access_mod",
+    "title": "Access Modifiers",
+    "category": "Coding Questions",
+    "group": "Object-Oriented Programming",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_oop_static",
+    "title": "Static Members",
+    "category": "Coding Questions",
+    "group": "Object-Oriented Programming",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_oop_except",
+    "title": "Exception Handling",
+    "category": "Coding Questions",
+    "group": "Object-Oriented Programming",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_ti_c",
+    "title": "C Interview Questions",
+    "category": "Coding Questions",
+    "group": "Technical Interview Preparation",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_ti_cpp",
+    "title": "C++ Interview Questions",
+    "category": "Coding Questions",
+    "group": "Technical Interview Preparation",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_ti_py",
+    "title": "Python Interview Questions",
+    "category": "Coding Questions",
+    "group": "Technical Interview Preparation",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_ti_java",
+    "title": "Java Interview Questions",
+    "category": "Coding Questions",
+    "group": "Technical Interview Preparation",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_ti_js",
+    "title": "JavaScript Interview Questions",
+    "category": "Coding Questions",
+    "group": "Technical Interview Preparation",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_ti_oop",
+    "title": "OOP Interview Questions",
+    "category": "Coding Questions",
+    "group": "Technical Interview Preparation",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_ti_dbms",
+    "title": "DBMS Interview Questions",
+    "category": "Coding Questions",
+    "group": "Technical Interview Preparation",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_ti_sql",
+    "title": "SQL Interview Questions",
+    "category": "Coding Questions",
+    "group": "Technical Interview Preparation",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_ti_dsa",
+    "title": "Data Structures Interview Questions",
+    "category": "Coding Questions",
+    "group": "Technical Interview Preparation",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_ti_algo",
+    "title": "Algorithms Interview Questions",
+    "category": "Coding Questions",
+    "group": "Technical Interview Preparation",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_ti_os",
+    "title": "Operating Systems",
+    "category": "Coding Questions",
+    "group": "Technical Interview Preparation",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_ti_cn",
+    "title": "Computer Networks",
+    "category": "Coding Questions",
+    "group": "Technical Interview Preparation",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_ti_se",
+    "title": "Software Engineering",
+    "category": "Coding Questions",
+    "group": "Technical Interview Preparation",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_ti_html",
+    "title": "HTML",
+    "category": "Coding Questions",
+    "group": "Technical Interview Preparation",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_ti_css",
+    "title": "CSS",
+    "category": "Coding Questions",
+    "group": "Technical Interview Preparation",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_ti_react",
+    "title": "React.js",
+    "category": "Coding Questions",
+    "group": "Technical Interview Preparation",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_ti_node",
+    "title": "Node.js",
+    "category": "Coding Questions",
+    "group": "Technical Interview Preparation",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_ti_express",
+    "title": "Express.js",
+    "category": "Coding Questions",
+    "group": "Technical Interview Preparation",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_ti_mern",
+    "title": "MERN Stack",
+    "category": "Coding Questions",
+    "group": "Technical Interview Preparation",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_ti_git",
+    "title": "Git and GitHub",
+    "category": "Coding Questions",
+    "group": "Technical Interview Preparation",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_py_data_handling",
+    "title": "Python and Data Handling",
+    "category": "Coding Questions",
+    "group": "Special Python Topics",
+    "required": 200,
+    "diff": {
+      "Hard": 150,
+      "Easy": 30,
+      "Medium": 20
+    }
+  },
+  {
+    "id": "coding_py_charts",
+    "title": "Python Charts",
+    "category": "Coding Questions",
+    "group": "Special Python Topics",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "coding_py_stats_math",
+    "title": "Python Statistical and Mathematical Operations",
+    "category": "Coding Questions",
+    "group": "Special Python Topics",
+    "required": 200,
+    "diff": {
+      "Hard": 150,
+      "Easy": 30,
+      "Medium": 20
+    }
+  },
+  {
+    "id": "quant_num_sys",
+    "title": "Number System",
+    "category": "Quantitative Aptitude",
+    "group": "Number and Arithmetic",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "quant_hcf_lcm",
+    "title": "HCF and LCM",
+    "category": "Quantitative Aptitude",
+    "group": "Number and Arithmetic",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "quant_dec_frac",
+    "title": "Decimal Fractions",
+    "category": "Quantitative Aptitude",
+    "group": "Number and Arithmetic",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "quant_simpl",
+    "title": "Simplification",
+    "category": "Quantitative Aptitude",
+    "group": "Number and Arithmetic",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "quant_sq_root",
+    "title": "Square Roots",
+    "category": "Quantitative Aptitude",
+    "group": "Number and Arithmetic",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "quant_cube_root",
+    "title": "Cube Roots",
+    "category": "Quantitative Aptitude",
+    "group": "Number and Arithmetic",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "quant_avg",
+    "title": "Average",
+    "category": "Quantitative Aptitude",
+    "group": "Number and Arithmetic",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "quant_prob_num",
+    "title": "Problems on Numbers",
+    "category": "Quantitative Aptitude",
+    "group": "Number and Arithmetic",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "quant_prob_ages",
+    "title": "Problems on Ages",
+    "category": "Quantitative Aptitude",
+    "group": "Number and Arithmetic",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "quant_sets",
+    "title": "Sets",
+    "category": "Quantitative Aptitude",
+    "group": "Number and Arithmetic",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "quant_quad_eq",
+    "title": "Quadratic Equations",
+    "category": "Quantitative Aptitude",
+    "group": "Number and Arithmetic",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "quant_log",
+    "title": "Logarithms",
+    "category": "Quantitative Aptitude",
+    "group": "Number and Arithmetic",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "quant_index_num",
+    "title": "Index Numbers",
+    "category": "Quantitative Aptitude",
+    "group": "Number and Arithmetic",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "quant_races_games",
+    "title": "Races and Games",
+    "category": "Quantitative Aptitude",
+    "group": "Number and Arithmetic",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "quant_pct",
+    "title": "Percentage",
+    "category": "Quantitative Aptitude",
+    "group": "Percentage and Commercial Mathematics",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "quant_prof_loss",
+    "title": "Profit and Loss",
+    "category": "Quantitative Aptitude",
+    "group": "Percentage and Commercial Mathematics",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "quant_disc",
+    "title": "Discount",
+    "category": "Quantitative Aptitude",
+    "group": "Percentage and Commercial Mathematics",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "quant_ratio_prop",
+    "title": "Ratio and Proportion",
+    "category": "Quantitative Aptitude",
+    "group": "Percentage and Commercial Mathematics",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "quant_partner",
+    "title": "Partnership",
+    "category": "Quantitative Aptitude",
+    "group": "Percentage and Commercial Mathematics",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "quant_chain_rule",
+    "title": "Chain Rule",
+    "category": "Quantitative Aptitude",
+    "group": "Percentage and Commercial Mathematics",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "quant_si",
+    "title": "Simple Interest",
+    "category": "Quantitative Aptitude",
+    "group": "Percentage and Commercial Mathematics",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "quant_ci",
+    "title": "Compound Interest",
+    "category": "Quantitative Aptitude",
+    "group": "Percentage and Commercial Mathematics",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "quant_true_disc",
+    "title": "True Discount",
+    "category": "Quantitative Aptitude",
+    "group": "Percentage and Commercial Mathematics",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "quant_bank_disc",
+    "title": "Banker's Discount",
+    "category": "Quantitative Aptitude",
+    "group": "Percentage and Commercial Mathematics",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "quant_stocks",
+    "title": "Stocks and Shares",
+    "category": "Quantitative Aptitude",
+    "group": "Percentage and Commercial Mathematics",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "quant_alligation",
+    "title": "Alligation and Mixtures",
+    "category": "Quantitative Aptitude",
+    "group": "Percentage and Commercial Mathematics",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "quant_time_work",
+    "title": "Time and Work",
+    "category": "Quantitative Aptitude",
+    "group": "Time-Based Problems",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "quant_pipes_cist",
+    "title": "Pipes and Cisterns",
+    "category": "Quantitative Aptitude",
+    "group": "Time-Based Problems",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "quant_time_dist",
+    "title": "Time and Distance",
+    "category": "Quantitative Aptitude",
+    "group": "Time-Based Problems",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "quant_boats_str",
+    "title": "Boats and Streams",
+    "category": "Quantitative Aptitude",
+    "group": "Time-Based Problems",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "quant_trains",
+    "title": "Problems on Trains",
+    "category": "Quantitative Aptitude",
+    "group": "Time-Based Problems",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "quant_work_wages",
+    "title": "Work and Wages",
+    "category": "Quantitative Aptitude",
+    "group": "Time-Based Problems",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "quant_races_time",
+    "title": "Races",
+    "category": "Quantitative Aptitude",
+    "group": "Time-Based Problems",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "quant_clocks",
+    "title": "Clocks",
+    "category": "Quantitative Aptitude",
+    "group": "Time-Based Problems",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "quant_calendars",
+    "title": "Calendars",
+    "category": "Quantitative Aptitude",
+    "group": "Time-Based Problems",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "quant_area",
+    "title": "Area",
+    "category": "Quantitative Aptitude",
+    "group": "Geometry and Mensuration",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "quant_perimeter",
+    "title": "Perimeter",
+    "category": "Quantitative Aptitude",
+    "group": "Geometry and Mensuration",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "quant_volume",
+    "title": "Volume",
+    "category": "Quantitative Aptitude",
+    "group": "Geometry and Mensuration",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "quant_surf_area",
+    "title": "Surface Area",
+    "category": "Quantitative Aptitude",
+    "group": "Geometry and Mensuration",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "quant_plane_geom",
+    "title": "Plane Geometry",
+    "category": "Quantitative Aptitude",
+    "group": "Geometry and Mensuration",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "quant_solid_geom",
+    "title": "Solid Geometry",
+    "category": "Quantitative Aptitude",
+    "group": "Geometry and Mensuration",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "quant_height_dist",
+    "title": "Height and Distance",
+    "category": "Quantitative Aptitude",
+    "group": "Geometry and Mensuration",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "quant_trig_fund",
+    "title": "Trigonometry Fundamentals",
+    "category": "Quantitative Aptitude",
+    "group": "Geometry and Mensuration",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "quant_permutation",
+    "title": "Permutation",
+    "category": "Quantitative Aptitude",
+    "group": "Probability and Combinatorics",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "quant_combination",
+    "title": "Combination",
+    "category": "Quantitative Aptitude",
+    "group": "Probability and Combinatorics",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "quant_prob",
+    "title": "Probability",
+    "category": "Quantitative Aptitude",
+    "group": "Probability and Combinatorics",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "quant_count_princ",
+    "title": "Basic Counting Principles",
+    "category": "Quantitative Aptitude",
+    "group": "Probability and Combinatorics",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "quant_adv_count",
+    "title": "Advanced Counting Problems",
+    "category": "Quantitative Aptitude",
+    "group": "Probability and Combinatorics",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "quant_odd_one",
+    "title": "Odd One Out",
+    "category": "Quantitative Aptitude",
+    "group": "Logical and Numerical Patterns",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "quant_num_series",
+    "title": "Number Series",
+    "category": "Quantitative Aptitude",
+    "group": "Logical and Numerical Patterns",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "quant_letter_series",
+    "title": "Letter Series",
+    "category": "Quantitative Aptitude",
+    "group": "Logical and Numerical Patterns",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "quant_miss_num",
+    "title": "Missing Numbers",
+    "category": "Quantitative Aptitude",
+    "group": "Logical and Numerical Patterns",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "quant_math_ops",
+    "title": "Mathematical Operations",
+    "category": "Quantitative Aptitude",
+    "group": "Logical and Numerical Patterns",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "quant_num_puzzles",
+    "title": "Number Puzzles",
+    "category": "Quantitative Aptitude",
+    "group": "Logical and Numerical Patterns",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "quant_data_suff_num",
+    "title": "Data Sufficiency",
+    "category": "Quantitative Aptitude",
+    "group": "Logical and Numerical Patterns",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "quant_di_fund",
+    "title": "Data Interpretation Fundamentals",
+    "category": "Quantitative Aptitude",
+    "group": "Data Interpretation",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "quant_di_tab",
+    "title": "Tabulation",
+    "category": "Quantitative Aptitude",
+    "group": "Data Interpretation",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "quant_di_bar",
+    "title": "Bar Graphs",
+    "category": "Quantitative Aptitude",
+    "group": "Data Interpretation",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "quant_di_pie",
+    "title": "Pie Charts",
+    "category": "Quantitative Aptitude",
+    "group": "Data Interpretation",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "quant_di_line",
+    "title": "Line Graphs",
+    "category": "Quantitative Aptitude",
+    "group": "Data Interpretation",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "quant_di_tables",
+    "title": "Tables",
+    "category": "Quantitative Aptitude",
+    "group": "Data Interpretation",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "quant_di_mixed",
+    "title": "Mixed Graphs",
+    "category": "Quantitative Aptitude",
+    "group": "Data Interpretation",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "quant_di_caselet",
+    "title": "Caselet Data Interpretation",
+    "category": "Quantitative Aptitude",
+    "group": "Data Interpretation",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "quant_di_comp",
+    "title": "Data Comparison",
+    "category": "Quantitative Aptitude",
+    "group": "Data Interpretation",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "quant_di_pct",
+    "title": "Percentage-Based Data Interpretation",
+    "category": "Quantitative Aptitude",
+    "group": "Data Interpretation",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "quant_surds_indices",
+    "title": "Surds and Indices",
+    "category": "Quantitative Aptitude",
+    "group": "Additional Placement Aptitude Topics",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "quant_div_rules",
+    "title": "Divisibility Rules",
+    "category": "Quantitative Aptitude",
+    "group": "Additional Placement Aptitude Topics",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "quant_remainders",
+    "title": "Remainders",
+    "category": "Quantitative Aptitude",
+    "group": "Additional Placement Aptitude Topics",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "quant_factors_mult",
+    "title": "Factors and Multiples",
+    "category": "Quantitative Aptitude",
+    "group": "Additional Placement Aptitude Topics",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "quant_approx",
+    "title": "Approximation",
+    "category": "Quantitative Aptitude",
+    "group": "Additional Placement Aptitude Topics",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "quant_algebra",
+    "title": "Algebra",
+    "category": "Quantitative Aptitude",
+    "group": "Additional Placement Aptitude Topics",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "quant_inequalities",
+    "title": "Inequalities",
+    "category": "Quantitative Aptitude",
+    "group": "Additional Placement Aptitude Topics",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "quant_coord_geom",
+    "title": "Coordinate Geometry",
+    "category": "Quantitative Aptitude",
+    "group": "Additional Placement Aptitude Topics",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "quant_di_prob",
+    "title": "Probability-Based Data Interpretation",
+    "category": "Quantitative Aptitude",
+    "group": "Additional Placement Aptitude Topics",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "verbal_parts_speech",
+    "title": "Parts of Speech",
+    "category": "Verbal Ability and Logical Reasoning",
+    "group": "Verbal - Grammar",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "verbal_nouns",
+    "title": "Nouns",
+    "category": "Verbal Ability and Logical Reasoning",
+    "group": "Verbal - Grammar",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "verbal_pronouns",
+    "title": "Pronouns",
+    "category": "Verbal Ability and Logical Reasoning",
+    "group": "Verbal - Grammar",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "verbal_verbs",
+    "title": "Verbs",
+    "category": "Verbal Ability and Logical Reasoning",
+    "group": "Verbal - Grammar",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "verbal_adjectives",
+    "title": "Adjectives",
+    "category": "Verbal Ability and Logical Reasoning",
+    "group": "Verbal - Grammar",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "verbal_adverbs",
+    "title": "Adverbs",
+    "category": "Verbal Ability and Logical Reasoning",
+    "group": "Verbal - Grammar",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "verbal_prepositions",
+    "title": "Prepositions",
+    "category": "Verbal Ability and Logical Reasoning",
+    "group": "Verbal - Grammar",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "verbal_conjunctions",
+    "title": "Conjunctions",
+    "category": "Verbal Ability and Logical Reasoning",
+    "group": "Verbal - Grammar",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "verbal_articles",
+    "title": "Articles",
+    "category": "Verbal Ability and Logical Reasoning",
+    "group": "Verbal - Grammar",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "verbal_tenses",
+    "title": "Tenses",
+    "category": "Verbal Ability and Logical Reasoning",
+    "group": "Verbal - Grammar",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "verbal_subj_verb",
+    "title": "Subject-Verb Agreement",
+    "category": "Verbal Ability and Logical Reasoning",
+    "group": "Verbal - Grammar",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "verbal_sing_plural",
+    "title": "Singular and Plural",
+    "category": "Verbal Ability and Logical Reasoning",
+    "group": "Verbal - Grammar",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "verbal_deg_comp",
+    "title": "Degrees of Comparison",
+    "category": "Verbal Ability and Logical Reasoning",
+    "group": "Verbal - Grammar",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "verbal_pos_deg",
+    "title": "Positive Degree",
+    "category": "Verbal Ability and Logical Reasoning",
+    "group": "Verbal - Grammar",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "verbal_comp_deg",
+    "title": "Comparative Degree",
+    "category": "Verbal Ability and Logical Reasoning",
+    "group": "Verbal - Grammar",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "verbal_super_deg",
+    "title": "Superlative Degree",
+    "category": "Verbal Ability and Logical Reasoning",
+    "group": "Verbal - Grammar",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "verbal_dir_speech",
+    "title": "Direct Speech",
+    "category": "Verbal Ability and Logical Reasoning",
+    "group": "Verbal - Grammar",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "verbal_indir_speech",
+    "title": "Indirect Speech",
+    "category": "Verbal Ability and Logical Reasoning",
+    "group": "Verbal - Grammar",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "verbal_act_voice",
+    "title": "Active Voice",
+    "category": "Verbal Ability and Logical Reasoning",
+    "group": "Verbal - Grammar",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "verbal_pass_voice",
+    "title": "Passive Voice",
+    "category": "Verbal Ability and Logical Reasoning",
+    "group": "Verbal - Grammar",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "verbal_cond_sent",
+    "title": "Conditional Sentences",
+    "category": "Verbal Ability and Logical Reasoning",
+    "group": "Verbal - Grammar",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "verbal_q_tags",
+    "title": "Question Tags",
+    "category": "Verbal Ability and Logical Reasoning",
+    "group": "Verbal - Grammar",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "verbal_sent_corr",
+    "title": "Sentence Correction",
+    "category": "Verbal Ability and Logical Reasoning",
+    "group": "Verbal - Grammar",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "verbal_err_spot",
+    "title": "Error Spotting",
+    "category": "Verbal Ability and Logical Reasoning",
+    "group": "Verbal - Grammar",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "verbal_sent_imp",
+    "title": "Sentence Improvement",
+    "category": "Verbal Ability and Logical Reasoning",
+    "group": "Verbal - Grammar",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "verbal_synonyms",
+    "title": "Synonyms",
+    "category": "Verbal Ability and Logical Reasoning",
+    "group": "Verbal - Vocabulary",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "verbal_antonyms",
+    "title": "Antonyms",
+    "category": "Verbal Ability and Logical Reasoning",
+    "group": "Verbal - Vocabulary",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "verbal_one_word",
+    "title": "One-Word Substitution",
+    "category": "Verbal Ability and Logical Reasoning",
+    "group": "Verbal - Vocabulary",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "verbal_idioms",
+    "title": "Idioms and Phrases",
+    "category": "Verbal Ability and Logical Reasoning",
+    "group": "Verbal - Vocabulary",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "verbal_phrasal_verbs",
+    "title": "Phrasal Verbs",
+    "category": "Verbal Ability and Logical Reasoning",
+    "group": "Verbal - Vocabulary",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "verbal_prefixes",
+    "title": "Prefixes",
+    "category": "Verbal Ability and Logical Reasoning",
+    "group": "Verbal - Vocabulary",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "verbal_suffixes",
+    "title": "Suffixes",
+    "category": "Verbal Ability and Logical Reasoning",
+    "group": "Verbal - Vocabulary",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "verbal_compound_words",
+    "title": "Compound Words",
+    "category": "Verbal Ability and Logical Reasoning",
+    "group": "Verbal - Vocabulary",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "verbal_homophones",
+    "title": "Homophones",
+    "category": "Verbal Ability and Logical Reasoning",
+    "group": "Verbal - Vocabulary",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "verbal_homonyms",
+    "title": "Homonyms",
+    "category": "Verbal Ability and Logical Reasoning",
+    "group": "Verbal - Vocabulary",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "verbal_confused_words",
+    "title": "Commonly Confused Words",
+    "category": "Verbal Ability and Logical Reasoning",
+    "group": "Verbal - Vocabulary",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "verbal_word_usage",
+    "title": "Word Usage",
+    "category": "Verbal Ability and Logical Reasoning",
+    "group": "Verbal - Vocabulary",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "verbal_rc",
+    "title": "Reading Comprehension",
+    "category": "Verbal Ability and Logical Reasoning",
+    "group": "Verbal - Reading and Writing Skills",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "verbal_para_jumbles",
+    "title": "Para Jumbles",
+    "category": "Verbal Ability and Logical Reasoning",
+    "group": "Verbal - Reading and Writing Skills",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "verbal_sent_rearr",
+    "title": "Sentence Rearrangement",
+    "category": "Verbal Ability and Logical Reasoning",
+    "group": "Verbal - Reading and Writing Skills",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "verbal_sent_comp",
+    "title": "Sentence Completion",
+    "category": "Verbal Ability and Logical Reasoning",
+    "group": "Verbal - Reading and Writing Skills",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "verbal_fill_blanks",
+    "title": "Fill in the Blanks",
+    "category": "Verbal Ability and Logical Reasoning",
+    "group": "Verbal - Reading and Writing Skills",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "verbal_cloze_tests",
+    "title": "Cloze Tests",
+    "category": "Verbal Ability and Logical Reasoning",
+    "group": "Verbal - Reading and Writing Skills",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "verbal_para_comp",
+    "title": "Paragraph Completion",
+    "category": "Verbal Ability and Logical Reasoning",
+    "group": "Verbal - Reading and Writing Skills",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "verbal_para_summary",
+    "title": "Paragraph Summary",
+    "category": "Verbal Ability and Logical Reasoning",
+    "group": "Verbal - Reading and Writing Skills",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "verbal_crit_reason",
+    "title": "Critical Reasoning",
+    "category": "Verbal Ability and Logical Reasoning",
+    "group": "Verbal - Reading and Writing Skills",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "verbal_analogies",
+    "title": "Verbal Analogies",
+    "category": "Verbal Ability and Logical Reasoning",
+    "group": "Verbal - Reading and Writing Skills",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "logical_fund",
+    "title": "Logical Reasoning Fundamentals",
+    "category": "Verbal Ability and Logical Reasoning",
+    "group": "Logical Reasoning",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "logical_blood_rel",
+    "title": "Blood Relations",
+    "category": "Verbal Ability and Logical Reasoning",
+    "group": "Logical Reasoning",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "logical_fam_tree",
+    "title": "Family Tree Problems",
+    "category": "Verbal Ability and Logical Reasoning",
+    "group": "Logical Reasoning",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "logical_dir_sense",
+    "title": "Direction Sense",
+    "category": "Verbal Ability and Logical Reasoning",
+    "group": "Logical Reasoning",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "logical_seat_arr",
+    "title": "Seating Arrangements",
+    "category": "Verbal Ability and Logical Reasoning",
+    "group": "Logical Reasoning",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "logical_lin_arr",
+    "title": "Linear Arrangements",
+    "category": "Verbal Ability and Logical Reasoning",
+    "group": "Logical Reasoning",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "logical_circ_arr",
+    "title": "Circular Arrangements",
+    "category": "Verbal Ability and Logical Reasoning",
+    "group": "Logical Reasoning",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "logical_grp_q",
+    "title": "Group-Based Questions",
+    "category": "Verbal Ability and Logical Reasoning",
+    "group": "Logical Reasoning",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "logical_sel_prob",
+    "title": "Selection Problems",
+    "category": "Verbal Ability and Logical Reasoning",
+    "group": "Logical Reasoning",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "logical_rank_order",
+    "title": "Ranking and Ordering",
+    "category": "Verbal Ability and Logical Reasoning",
+    "group": "Logical Reasoning",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "logical_code_decode",
+    "title": "Coding-Decoding",
+    "category": "Verbal Ability and Logical Reasoning",
+    "group": "Logical Reasoning",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "logical_num_code",
+    "title": "Number Coding",
+    "category": "Verbal Ability and Logical Reasoning",
+    "group": "Logical Reasoning",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "logical_letter_code",
+    "title": "Letter Coding",
+    "category": "Verbal Ability and Logical Reasoning",
+    "group": "Logical Reasoning",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "logical_sym_code",
+    "title": "Symbol Coding",
+    "category": "Verbal Ability and Logical Reasoning",
+    "group": "Logical Reasoning",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "logical_analogy",
+    "title": "Analogy",
+    "category": "Verbal Ability and Logical Reasoning",
+    "group": "Logical Reasoning",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "logical_classif",
+    "title": "Classification",
+    "category": "Verbal Ability and Logical Reasoning",
+    "group": "Logical Reasoning",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "logical_odd_one",
+    "title": "Odd One Out",
+    "category": "Verbal Ability and Logical Reasoning",
+    "group": "Logical Reasoning",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "logical_num_series",
+    "title": "Number Series",
+    "category": "Verbal Ability and Logical Reasoning",
+    "group": "Logical Reasoning",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "logical_letter_series",
+    "title": "Letter Series",
+    "category": "Verbal Ability and Logical Reasoning",
+    "group": "Logical Reasoning",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "logical_alphanumeric",
+    "title": "Alphanumeric Series",
+    "category": "Verbal Ability and Logical Reasoning",
+    "group": "Logical Reasoning",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "logical_miss_num",
+    "title": "Missing Numbers",
+    "category": "Verbal Ability and Logical Reasoning",
+    "group": "Logical Reasoning",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "logical_syllogisms",
+    "title": "Syllogisms",
+    "category": "Verbal Ability and Logical Reasoning",
+    "group": "Logical Reasoning",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "logical_venn",
+    "title": "Venn Diagrams",
+    "category": "Verbal Ability and Logical Reasoning",
+    "group": "Logical Reasoning",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "logical_stmt_concl",
+    "title": "Statement and Conclusion",
+    "category": "Verbal Ability and Logical Reasoning",
+    "group": "Logical Reasoning",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "logical_stmt_assump",
+    "title": "Statement and Assumption",
+    "category": "Verbal Ability and Logical Reasoning",
+    "group": "Logical Reasoning",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "logical_stmt_arg",
+    "title": "Statement and Argument",
+    "category": "Verbal Ability and Logical Reasoning",
+    "group": "Logical Reasoning",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "logical_cause_effect",
+    "title": "Cause and Effect",
+    "category": "Verbal Ability and Logical Reasoning",
+    "group": "Logical Reasoning",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "logical_assert_reason",
+    "title": "Assertion and Reason",
+    "category": "Verbal Ability and Logical Reasoning",
+    "group": "Logical Reasoning",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "logical_data_suff",
+    "title": "Data Sufficiency",
+    "category": "Verbal Ability and Logical Reasoning",
+    "group": "Logical Reasoning",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "logical_puzzles",
+    "title": "Puzzles",
+    "category": "Verbal Ability and Logical Reasoning",
+    "group": "Logical Reasoning",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "logical_cal_reason",
+    "title": "Calendar-Based Reasoning",
+    "category": "Verbal Ability and Logical Reasoning",
+    "group": "Logical Reasoning",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "logical_clock_reason",
+    "title": "Clock-Based Reasoning",
+    "category": "Verbal Ability and Logical Reasoning",
+    "group": "Logical Reasoning",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "logical_non_verbal",
+    "title": "Non-Verbal Reasoning",
+    "category": "Verbal Ability and Logical Reasoning",
+    "group": "Logical Reasoning",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "logical_mirror_img",
+    "title": "Mirror Images",
+    "category": "Verbal Ability and Logical Reasoning",
+    "group": "Logical Reasoning",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "logical_water_img",
+    "title": "Water Images",
+    "category": "Verbal Ability and Logical Reasoning",
+    "group": "Logical Reasoning",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "logical_paper_fold",
+    "title": "Paper Folding",
+    "category": "Verbal Ability and Logical Reasoning",
+    "group": "Logical Reasoning",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "logical_paper_cut",
+    "title": "Paper Cutting",
+    "category": "Verbal Ability and Logical Reasoning",
+    "group": "Logical Reasoning",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "logical_fig_comp",
+    "title": "Figure Completion",
+    "category": "Verbal Ability and Logical Reasoning",
+    "group": "Logical Reasoning",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "logical_embed_fig",
+    "title": "Embedded Figures",
+    "category": "Verbal Ability and Logical Reasoning",
+    "group": "Logical Reasoning",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  },
+  {
+    "id": "logical_pat_recog",
+    "title": "Pattern Recognition",
+    "category": "Verbal Ability and Logical Reasoning",
+    "group": "Logical Reasoning",
+    "required": 100,
+    "diff": {
+      "Hard": 75,
+      "Easy": 15,
+      "Medium": 10
+    }
+  }
+]
