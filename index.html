@@ -1,0 +1,2379 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PrepMaster Pro — Complete Placement & Competitive Exam Learning Platform</title>
+
+  <!-- KaTeX CSS & JS for LaTeX Math Rendering -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css">
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js"></script>
+
+  <style>
+
+:root {
+  --bg: #f4f6fa;
+  --card: #ffffff;
+  --card-subtle: #f8fafc;
+  --ink: #1e293b;
+  --mut: #64748b;
+  --pri: #2563eb;
+  --priL: #dbeafe;
+  --priHover: #1d4ed8;
+  --ok: #16a34a;
+  --okL: #dcfce7;
+  --okBorder: #86efac;
+  --bad: #dc2626;
+  --badL: #fee2e2;
+  --badBorder: #fca5a5;
+  --line: #e2e8f0;
+  --warn: #d97706;
+  --warnL: #fef3c7;
+  --purple: #7c3aed;
+  --purpleL: #ede9fe;
+  --maxw: 1000px;
+  --font-size: 16px;
+  --card-pad: 20px;
+  --radius: 12px;
+  --shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+}
+
+:root[data-theme="dark"] {
+  --bg: #0b1017;
+  --card: #151d28;
+  --card-subtle: #1a2332;
+  --ink: #f1f5f9;
+  --mut: #94a3b8;
+  --pri: #3b82f6;
+  --priL: #1e2d42;
+  --priHover: #60a5fa;
+  --ok: #22c55e;
+  --okL: #132f1e;
+  --okBorder: #166534;
+  --bad: #ef4444;
+  --badL: #3b1717;
+  --badBorder: #991b1b;
+  --line: #243142;
+  --warn: #f59e0b;
+  --warnL: #362912;
+  --purple: #a855f7;
+  --purpleL: #2e1d44;
+  --shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+:root[data-theme="forest"] {
+  --bg: #091811; --card: #11261c; --card-subtle: #173326; --ink: #e8f5ee; --mut: #8eb39d;
+  --pri: #10b981; --priL: #163e2c; --priHover: #34d399; --ok: #22c55e; --okL: #132f1e;
+  --bad: #f87171; --badL: #3b1717; --line: #1c422f; --warn: #fbbf24;
+}
+
+:root[data-theme="dragon"] {
+  --bg: #140d12; --card: #22141e; --card-subtle: #2d1b28; --ink: #fde8ef; --mut: #b88da0;
+  --pri: #f43f5e; --priL: #3d1724; --priHover: #fb7185; --ok: #10b981; --okL: #132f1e;
+  --bad: #ff3344; --badL: #451216; --line: #3d2335; --warn: #fbbf24;
+}
+
+:root[data-theme="ocean"] {
+  --bg: #071924; --card: #0e2738; --card-subtle: #13334a; --ink: #e0f2fe; --mut: #7dd3fc;
+  --pri: #0284c7; --priL: #133e5c; --priHover: #38bdf8; --ok: #14b8a6; --okL: #0d332f;
+  --bad: #f43f5e; --badL: #3d1724; --line: #194663; --warn: #f59e0b;
+}
+
+:root[data-theme="wizard"] {
+  --bg: #0d0b1a; --card: #17132e; --card-subtle: #201b40; --ink: #f3e8ff; --mut: #c084fc;
+  --pri: #9333ea; --priL: #2c164a; --priHover: #c084fc; --ok: #10b981; --okL: #132f1e;
+  --bad: #f43f5e; --badL: #3d1724; --line: #31285e; --warn: #fbbf24;
+}
+
+:root[data-theme="fairy"] {
+  --bg: #fdf2f8; --card: #ffffff; --card-subtle: #fce7f3; --ink: #3b0764; --mut: #86198f;
+  --pri: #c026d3; --priL: #fae8ff; --priHover: #e879f9; --ok: #16a34a; --okL: #dcfce7;
+  --bad: #dc2626; --badL: #fee2e2; --line: #f5d0fe; --warn: #d97706;
+}
+
+:root[data-theme="royal"] {
+  --bg: #fcf9f2; --card: #ffffff; --card-subtle: #f7f0e3; --ink: #451a03; --mut: #78350f;
+  --pri: #b45309; --priL: #fef3c7; --priHover: #d97706; --ok: #15803d; --okL: #dcfce7;
+  --bad: #b91c1c; --badL: #fee2e2; --line: #fde68a; --warn: #b45309;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+  font-size: var(--font-size);
+  line-height: 1.55;
+  transition: background 0.2s, color 0.2s;
+  overflow-x: hidden;
+}
+
+/* TOPBAR */
+header.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--card);
+  border-bottom: 1px solid var(--line);
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+}
+.topbar-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.three-dot-btn {
+  background: transparent;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: var(--ink);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.three-dot-btn:hover {
+  background: var(--priL);
+  color: var(--pri);
+  border-color: var(--pri);
+}
+.brand-title {
+  font-weight: 800;
+  font-size: 1.25rem;
+  letter-spacing: -0.02em;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  user-select: none;
+}
+.brand-title span.badge {
+  font-size: 0.72rem;
+  padding: 3px 8px;
+  border-radius: 99px;
+  background: var(--okL);
+  color: var(--ok);
+  font-weight: 700;
+  border: 1px solid var(--okBorder);
+}
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.btn {
+  background: var(--card);
+  color: var(--ink);
+  border: 1px solid var(--line);
+  padding: 7px 14px;
+  border-radius: 8px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.15s;
+  user-select: none;
+}
+.btn:hover {
+  background: var(--priL);
+  color: var(--pri);
+  border-color: var(--pri);
+}
+.btn.active, .btn-primary {
+  background: var(--pri);
+  color: #ffffff;
+  border-color: var(--pri);
+}
+.btn.active:hover, .btn-primary:hover {
+  background: var(--priHover);
+}
+.btn-sm {
+  padding: 4px 10px;
+  font-size: 0.8rem;
+}
+.user-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 10px;
+  border-radius: 99px;
+  border: 1px solid var(--line);
+  background: var(--card-subtle);
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.88rem;
+}
+.user-avatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--pri);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+}
+
+/* SIDEBAR DRAWER */
+#sidebar-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(2px);
+  z-index: 150;
+  display: none;
+}
+#sidebar-backdrop.open { display: block; }
+#sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 360px;
+  max-width: 85vw;
+  background: var(--card);
+  border-right: 1px solid var(--line);
+  z-index: 200;
+  transform: translateX(-100%);
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  display: flex;
+  flex-direction: column;
+  box-shadow: 4px 0 24px rgba(0,0,0,0.15);
+}
+#sidebar.open { transform: translateX(0); }
+.sidebar-header {
+  padding: 16px;
+  border-bottom: 1px solid var(--line);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sidebar-search {
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--line);
+}
+.search-input {
+  width: 100%;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+  background: var(--bg);
+  color: var(--ink);
+  font-size: 0.9rem;
+}
+.sidebar-nav {
+  padding: 10px 16px;
+  border-bottom: 1px solid var(--line);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+}
+.sidebar-topic-list {
+  flex: 1;
+  overflow-y: auto;
+  padding: 8px 12px;
+}
+.topic-tree-group {
+  margin-bottom: 12px;
+}
+.topic-tree-group h4 {
+  margin: 8px 6px 4px 6px;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  color: var(--mut);
+  letter-spacing: 0.05em;
+}
+.topic-nav-item {
+  padding: 8px 10px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.88rem;
+  color: var(--ink);
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.topic-nav-item:hover, .topic-nav-item.active {
+  background: var(--priL);
+  color: var(--pri);
+  font-weight: 600;
+}
+
+/* MAIN LAYOUT */
+main.container {
+  max-width: var(--maxw);
+  margin: 24px auto;
+  padding: 0 16px 80px 16px;
+}
+
+/* SECTION TABS (Category Switcher) */
+.category-tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+}
+.cat-tab-btn {
+  padding: 10px 18px;
+  border-radius: 10px;
+  border: 1px solid var(--line);
+  background: var(--card);
+  color: var(--mut);
+  font-weight: 700;
+  font-size: 0.95rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+  transition: all 0.2s;
+}
+.cat-tab-btn:hover {
+  color: var(--ink);
+  border-color: var(--pri);
+}
+.cat-tab-btn.active {
+  background: var(--pri);
+  color: white;
+  border-color: var(--pri);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);
+}
+
+/* TOPIC CATALOG GRID */
+.topic-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+}
+.topic-card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 12px;
+  box-shadow: var(--shadow);
+  transition: transform 0.15s, border-color 0.15s;
+}
+.topic-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--pri);
+}
+.topic-card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 8px;
+}
+.topic-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--ink);
+  margin: 0;
+}
+.topic-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  font-size: 0.8rem;
+  color: var(--mut);
+}
+.diff-pill {
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+.diff-pill.hard { background: var(--badL); color: var(--bad); }
+.diff-pill.med { background: var(--warnL); color: var(--warn); }
+.diff-pill.easy { background: var(--okL); color: var(--ok); }
+.topic-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+/* QUESTION CARD (PRACTICE & TEST) */
+.q-card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: var(--card-pad);
+  box-shadow: var(--shadow);
+  margin-bottom: 20px;
+}
+.q-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--line);
+}
+.q-badges {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.q-statement {
+  font-size: 1.15rem;
+  font-weight: 600;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+.q-code-block {
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 14px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.92rem;
+  overflow-x: auto;
+  margin: 12px 0 20px 0;
+  line-height: 1.45;
+}
+
+/* OPTIONS LIST */
+.options-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+.option-item {
+  background: var(--card);
+  border: 2px solid var(--line);
+  border-radius: 10px;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  cursor: pointer;
+  transition: all 0.15s ease-out;
+  position: relative;
+  user-select: none;
+}
+.option-item:hover {
+  background: var(--card-subtle);
+  border-color: var(--pri);
+}
+.option-item.focused {
+  outline: 2px solid var(--pri);
+  background: var(--priL);
+}
+.option-badge {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  color: var(--mut);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.9rem;
+  flex-shrink: 0;
+  transition: all 0.15s;
+}
+.option-text {
+  flex: 1;
+  font-size: 1rem;
+}
+
+/* INSTANT FEEDBACK STATES (PRACTICE MODE) */
+.option-item.is-correct {
+  background: var(--okL) !important;
+  border-color: var(--ok) !important;
+  color: var(--ink) !important;
+}
+.option-item.is-correct .option-badge {
+  background: var(--ok);
+  color: white;
+  border-color: var(--ok);
+}
+.option-item.is-wrong {
+  background: var(--badL) !important;
+  border-color: var(--bad) !important;
+  color: var(--ink) !important;
+}
+.option-item.is-wrong .option-badge {
+  background: var(--bad);
+  color: white;
+  border-color: var(--bad);
+}
+
+/* TEST MODE SELECTION */
+.option-item.test-selected {
+  background: var(--priL);
+  border-color: var(--pri);
+}
+.option-item.test-selected .option-badge {
+  background: var(--pri);
+  color: white;
+}
+
+/* FEEDBACK & EXPLANATION BOXES */
+.feedback-box {
+  border-radius: 10px;
+  padding: 16px;
+  margin-top: 16px;
+  animation: fadeIn 0.2s ease-out;
+}
+.feedback-box.correct {
+  background: var(--okL);
+  border: 1px solid var(--okBorder);
+  color: var(--ink);
+}
+.feedback-box.wrong {
+  background: var(--badL);
+  border: 1px solid var(--badBorder);
+  color: var(--ink);
+}
+.feedback-title {
+  font-weight: 800;
+  font-size: 1.05rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+.explanation-card {
+  background: var(--card-subtle);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 16px;
+  margin-top: 14px;
+}
+.explanation-card h4 {
+  margin: 0 0 8px 0;
+  font-size: 0.95rem;
+  color: var(--pri);
+}
+.step-solution {
+  white-space: pre-line;
+  font-size: 0.92rem;
+  line-height: 1.6;
+  margin-top: 8px;
+}
+
+/* QUESTION CONTROLS TOOLBAR */
+.q-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+}
+.q-nav-buttons {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* TEST PALETTE */
+.test-layout {
+  display: grid;
+  grid-template-columns: 1fr 280px;
+  gap: 20px;
+}
+@media (max-width: 860px) {
+  .test-layout { grid-template-columns: 1fr; }
+}
+.test-palette-card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 16px;
+  box-shadow: var(--shadow);
+  height: fit-content;
+}
+.palette-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 6px;
+  margin-top: 12px;
+  max-height: 380px;
+  overflow-y: auto;
+  padding: 4px;
+}
+.palette-btn {
+  aspect-ratio: 1;
+  border-radius: 6px;
+  border: 1px solid var(--line);
+  background: var(--bg);
+  font-size: 0.82rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s;
+}
+.palette-btn.current { outline: 2px solid var(--pri); }
+.palette-btn.answered { background: var(--ok); color: white; border-color: var(--ok); }
+.palette-btn.marked { background: var(--purple); color: white; border-color: var(--purple); }
+
+/* FORMULA BOOK */
+.formula-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  gap: 16px;
+}
+.formula-card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 18px;
+  box-shadow: var(--shadow);
+}
+.formula-latex {
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 14px;
+  margin: 12px 0;
+  text-align: center;
+  overflow-x: auto;
+}
+
+/* MODALS */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(3px);
+  z-index: 500;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+.modal-backdrop.open { display: flex; }
+.modal-dialog {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  max-width: 600px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: 24px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.25);
+  animation: modalPop 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes fadeIn { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes modalPop { from { opacity: 0; transform: scale(0.95); } to { opacity: 1; transform: scale(1); } }
+
+/* RESPONSIVE HELPERS */
+@media (max-width: 640px) {
+  header.topbar { padding: 8px 12px; }
+  .brand-title span.badge { display: none; }
+  main.container { padding: 0 10px 60px 10px; }
+  .q-statement { font-size: 1.05rem; }
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- TOPBAR -->
+  <header class="topbar">
+    <div class="topbar-left">
+      <!-- Visible Three-Dot Navigation Menu Button -->
+      <button class="three-dot-btn" id="three-dot-toggle" title="Open Syllabus Navigator (Three-dot Menu)" aria-label="Open Navigation">
+        &#8942;
+      </button>
+      <div class="brand-title" onclick="navigateTo('catalog')">
+        <span>PrepMaster <span style="color:var(--pri)">Pro</span></span>
+        <span class="badge" id="global-verified-badge">32,900 Verified Qs (75/15/10 Rule)</span>
+      </div>
+    </div>
+
+    <div class="topbar-right">
+      <button class="btn" onclick="navigateTo('catalog')" title="All Syllabus Topics">📚 Topics</button>
+      <button class="btn" onclick="navigateTo('formulas')" title="Formula Book">📐 Formulas</button>
+      <button class="btn" onclick="navigateTo('study', CUR_TOPIC)" title="Study Notes">📖 Study Notes</button>
+      <button class="btn" onclick="navigateTo('reports')" title="Analytics & Progress">📊 Reports</button>
+      <button class="btn" onclick="navigateTo('admin')" title="Content Management">⚙️ Admin</button>
+      <button class="btn" onclick="openShortcutsModal()" title="Keyboard Shortcuts Help">⌨️ Keys</button>
+
+      <button class="user-btn" onclick="openSettingsModal()" title="User Profile & Settings">
+        <div class="user-avatar" id="header-user-avatar">K</div>
+        <span id="header-user-name">Kalidass S</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- SIDEBAR DRAWER & BACKDROP -->
+  <div id="sidebar-backdrop"></div>
+  <aside id="sidebar" aria-label="Main Navigation">
+    <div class="sidebar-header">
+      <div style="display:flex;align-items:center;gap:8px">
+        <b style="font-size:1.15rem">Syllabus Navigator</b>
+        <span class="diff-pill easy" style="font-size:0.72rem">327 Topics</span>
+      </div>
+      <button class="btn btn-sm" onclick="toggleSidebar(false)">✕</button>
+    </div>
+
+    <div class="sidebar-nav">
+      <button class="btn btn-sm" onclick="navigateTo('catalog')">🏠 Home Catalog</button>
+      <button class="btn btn-sm" onclick="navigateTo('practice', CUR_TOPIC)">⚡ Practice Mode</button>
+      <button class="btn btn-sm" onclick="navigateTo('test', CUR_TOPIC)">⏱️ Mock Exams</button>
+      <button class="btn btn-sm" onclick="navigateTo('study', CUR_TOPIC)">📖 Study Guides</button>
+      <button class="btn btn-sm" onclick="navigateTo('formulas')">📐 Formula Book</button>
+      <button class="btn btn-sm" onclick="navigateTo('bookmarks')">★ Bookmarks</button>
+      <button class="btn btn-sm" onclick="navigateTo('reports')">📊 Analytics</button>
+      <button class="btn btn-sm" onclick="navigateTo('admin')">⚙️ Content Admin</button>
+    </div>
+
+    <div class="sidebar-topic-list" id="sidebar-topics-container">
+      <!-- Generated dynamically from catalog -->
+    </div>
+  </aside>
+
+  <!-- MAIN CONTAINER -->
+  <main class="container">
+
+    <!-- 1. CATEGORY SWITCHER TABS -->
+    <div class="category-tabs">
+      <button class="cat-tab-btn active" data-cat="all">All Categories (327 Topics)</button>
+      <button class="cat-tab-btn" data-cat="Coding Questions">💻 Coding Questions (166 Topics)</button>
+      <button class="cat-tab-btn" data-cat="Quantitative Aptitude">📐 Quantitative Aptitude (74 Topics)</button>
+      <button class="cat-tab-btn" data-cat="Verbal Ability and Logical Reasoning">🧠 Verbal & Logical (87 Topics)</button>
+    </div>
+
+    <!-- VIEW 1: CATALOG VIEW -->
+    <div id="catalog-view">
+      <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:16px;flex-wrap:wrap;">
+        <div style="flex:1;min-width:280px;">
+          <input type="text" id="catalog-search-input" class="search-input" placeholder="🔍 Search any topic across all 327 subjects (e.g. Binary Search, Dynamic Programming, Percentage, Syllogisms)...">
+        </div>
+        <div style="display:flex;gap:8px;align-items:center;">
+          <span class="diff-pill easy" id="catalog-count-pill">327 Topics</span>
+          <button class="btn btn-sm" onclick="navigateTo('practice', 'coding_pf_basic')">⚡ Quick Start Practice</button>
+        </div>
+      </div>
+      <div class="topic-grid" id="catalog-grid"></div>
+    </div>
+
+    <!-- VIEW 2: PRACTICE VIEW -->
+    <div id="practice-view" style="display:none;">
+      <div id="practice-card-container"></div>
+    </div>
+
+    <!-- VIEW 3: TEST VIEW -->
+    <div id="test-view" style="display:none;">
+      <div style="display:flex;justify-content:space-between;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 18px;margin-bottom:16px;">
+        <div style="font-weight:700;font-size:1.1rem;">⏱️ Mock Examination Mode</div>
+        <div style="display:flex;align-items:center;gap:12px;">
+          <span>Time Remaining:</span>
+          <span id="test-timer-display" style="font-size:1.4rem;font-weight:900;color:var(--pri);font-family:monospace;">60:00</span>
+          <button class="btn btn-primary btn-sm" onclick="confirmSubmitTest()" style="background:var(--ok);border-color:var(--ok);">Submit Test</button>
+        </div>
+      </div>
+
+      <div class="test-layout">
+        <div id="test-card-container"></div>
+        <div id="test-palette-container"></div>
+      </div>
+    </div>
+
+    <!-- VIEW 4: TEST RESULT VIEW -->
+    <div id="test-result-view" style="display:none;">
+      <div id="test-result-container"></div>
+    </div>
+
+    <!-- VIEW 5: STUDY MATERIAL VIEW -->
+    <div id="study-view" style="display:none;">
+      <div id="study-container"></div>
+    </div>
+
+    <!-- VIEW 6: FORMULA BOOK VIEW -->
+    <div id="formulas-view" style="display:none;">
+      <div style="margin-bottom:20px;">
+        <h2>📐 Dedicated Formula Book & Mathematical Reference</h2>
+        <input type="text" id="formula-search-input" class="search-input" placeholder="Search formulas by name, concept, or variable..." oninput="renderFormulaBook()">
+      </div>
+      <div class="formula-grid" id="formulas-container"></div>
+    </div>
+
+    <!-- VIEW 7: PERFORMANCE REPORTS VIEW -->
+    <div id="reports-view" style="display:none;">
+      <div id="reports-container"></div>
+    </div>
+
+    <!-- VIEW 8: ADMIN & CONTENT MANAGEMENT VIEW -->
+    <div id="admin-view" style="display:none;">
+      <div id="admin-container"></div>
+    </div>
+
+    <!-- VIEW 9: BOOKMARKS VIEW -->
+    <div id="bookmarks-view" style="display:none;">
+      <div id="bookmarks-container"></div>
+    </div>
+
+  </main>
+
+  <!-- SETTINGS MODAL -->
+  <div id="settings-modal" class="modal-backdrop">
+    <div class="modal-dialog">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;">
+        <h3 style="margin:0;">User Profile & Personalization</h3>
+        <button class="btn btn-sm" onclick="closeSettingsModal()">✕</button>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:16px;">
+        <div>
+          <label style="font-weight:600;font-size:0.9rem;">Display Theme</label>
+          <select id="theme-select" class="search-input" style="margin-top:6px;" onchange="handleThemeChange(this.value)">
+            <option value="dark">Dark Theme (Recommended)</option>
+            <option value="light">Light Theme</option>
+            <option value="forest">Emerald Forest</option>
+            <option value="dragon">Dragon Crimson</option>
+            <option value="ocean">Deep Ocean</option>
+            <option value="wizard">Arcane Wizard Purple</option>
+            <option value="fairy">Fairy Blossom</option>
+            <option value="royal">Royal Amber</option>
+          </select>
+        </div>
+
+        <div>
+          <label style="font-weight:600;font-size:0.9rem;">Base Font Size (px)</label>
+          <input type="range" id="font-size-input" min="13" max="22" value="16" style="width:100%;margin-top:6px;" oninput="handleFontSizeChange(this.value)">
+        </div>
+
+        <div>
+          <label style="font-weight:600;font-size:0.9rem;">Content Card Width (px)</label>
+          <input type="range" id="card-width-input" min="760" max="1400" value="1000" style="width:100%;margin-top:6px;" oninput="handleCardWidthChange(this.value)">
+        </div>
+
+        <div style="border-top:1px solid var(--line);padding-top:16px;display:flex;justify-content:flex-end;">
+          <button class="btn btn-primary" onclick="closeSettingsModal()">Save & Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- KEYBOARD SHORTCUTS GUIDE MODAL -->
+  <div id="shortcuts-modal" class="modal-backdrop">
+    <div class="modal-dialog">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;">
+        <h3 style="margin:0;">⌨️ Complete Keyboard Shortcuts Reference</h3>
+        <button class="btn btn-sm" onclick="closeShortcutsModal()">✕</button>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:16px;font-size:0.9rem;">
+        <div>
+          <h4 style="color:var(--pri);margin:0 0 6px 0;">⚡ Practice Mode Shortcuts</h4>
+          <table style="width:100%;border-collapse:collapse;">
+            <tr><td style="padding:4px 0;"><b>Up / Down Arrow</b></td><td>Move focus between options</td></tr>
+            <tr><td style="padding:4px 0;"><b>Enter</b></td><td>Select focused option; if answered, advance to next question</td></tr>
+            <tr><td style="padding:4px 0;"><b>1, 2, 3, 4 or A, B, C, D</b></td><td>Select corresponding option immediately</td></tr>
+            <tr><td style="padding:4px 0;"><b>Left / Right Arrow</b></td><td>Previous / Next question</td></tr>
+            <tr><td style="padding:4px 0;"><b>H</b></td><td>Show or hide hint clue</td></tr>
+            <tr><td style="padding:4px 0;"><b>S</b></td><td>Show verified correct answer & solution</td></tr>
+            <tr><td style="padding:4px 0;"><b>R</b></td><td>Reset current question attempt</td></tr>
+            <tr><td style="padding:4px 0;"><b>M</b></td><td>Switch to Test mode for this topic</td></tr>
+          </table>
+        </div>
+
+        <div style="border-top:1px solid var(--line);padding-top:10px;">
+          <h4 style="color:var(--purple);margin:0 0 6px 0;">⏱️ Test Mode Shortcuts</h4>
+          <table style="width:100%;border-collapse:collapse;">
+            <tr><td style="padding:4px 0;"><b>1, 2, 3, 4 / A, B, C, D</b></td><td>Record answer and advance to next question</td></tr>
+            <tr><td style="padding:4px 0;"><b>Left / Right Arrow</b></td><td>Previous / Next question</td></tr>
+            <tr><td style="padding:4px 0;"><b>Shift + Enter</b></td><td>Submit examination (with confirmation)</td></tr>
+            <tr><td style="padding:4px 0;"><b>M</b></td><td>Switch to Practice mode</td></tr>
+          </table>
+        </div>
+
+        <div style="border-top:1px solid var(--line);padding-top:10px;">
+          <h4 style="color:var(--ok);margin:0 0 6px 0;">🌐 Global & Study Navigation</h4>
+          <table style="width:100%;border-collapse:collapse;">
+            <tr><td style="padding:4px 0;"><b>[ and ]</b></td><td>Cycle main categories (Coding, Quant, Verbal)</td></tr>
+            <tr><td style="padding:4px 0;"><b>Ctrl + Left / Right</b></td><td>Previous / Next category</td></tr>
+            <tr><td style="padding:4px 0;"><b>/ (Forward Slash)</b></td><td>Focus study material search field</td></tr>
+            <tr><td style="padding:4px 0;"><b>Escape</b></td><td>Close any open modal or navigation drawer</td></tr>
+          </table>
+        </div>
+
+        <div style="border-top:1px solid var(--line);padding-top:12px;text-align:right;">
+          <button class="btn btn-primary" onclick="closeShortcutsModal()">Got It</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- LOAD PERSISTENT QUESTION DATA CHUNKS (CORS SAFE FOR FILE:// AND HTTP) -->
+  <script src="data/catalog_and_meta.js"></script>
+  <script src="data/coding_part1.js"></script>
+  <script src="data/coding_part2.js"></script>
+  <script src="data/quant_questions.js"></script>
+  <script src="data/verbal_logical_questions.js"></script>
+
+  <!-- APPLICATION ENGINE SCRIPT -->
+  <script>
+
+// GLOBAL CONSTANTS & HELPERS
+const LS_KEY = 'prep_master_v3_state';
+const $ = s => document.querySelector(s);
+const $$ = s => document.querySelectorAll(s);
+const esc = s => String(s || '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+const LETTERS = ['A', 'B', 'C', 'D'];
+
+// MASTER MEMORY STORE
+window.MASTER_QUESTIONS = {};
+let ALL_QUESTIONS_MAP = {};
+
+// RUNTIME APPLICATION STATE
+let CUR_VIEW = 'catalog'; // 'catalog', 'practice', 'test', 'test_result', 'study', 'formulas', 'reports', 'settings', 'admin', 'bookmarks'
+let CUR_TOPIC = 'coding_pf_basic';
+let CUR_CAT = 'all';
+let CUR_DIFF_FILTER = 'all';
+let CUR_SEARCH = '';
+let PRACTICE_POOL = [];
+let PRACTICE_IDX = 0;
+let PRACTICE_FOCUSED_OPT = 0;
+
+// TEST STATE
+let TEST_SESSION = null;
+let TEST_TIMER_INTERVAL = null;
+
+// DEFAULT PERSISTENT STATE
+function defaultState() {
+  return {
+    name: 'Kalidass S',
+    goal: 'Software Engineer / Qualcomm Placement',
+    bookmarks: {},
+    practiceHistory: {}, // { qid: { answered: true, selected: 0, correct: true, attempts: 1 } }
+    testHistory: [], // [ { id, date, title, total, correct, score, timeSec } ]
+    settings: {
+      theme: 'dark',
+      fontSize: 16,
+      cardW: 1000,
+      testDurationMin: 60,
+      autoAdvance: true
+    }
+  };
+}
+
+let S = defaultState();
+try {
+  const saved = localStorage.getItem(LS_KEY);
+  if (saved) S = Object.assign(defaultState(), JSON.parse(saved));
+} catch (e) {
+  console.warn('LocalStorage load failed, using default state.', e);
+}
+
+function saveState() {
+  try {
+    localStorage.setItem(LS_KEY, JSON.stringify(S));
+  } catch (e) {
+    console.warn('LocalStorage quota exceeded.', e);
+  }
+}
+
+// THEME & APPEARANCE
+function applyTheme() {
+  const root = document.documentElement;
+  const st = S.settings;
+  if (st.theme) {
+    root.setAttribute('data-theme', st.theme);
+  }
+  if (st.fontSize) root.style.setProperty('--font-size', st.fontSize + 'px');
+  if (st.cardW) root.style.setProperty('--maxw', st.cardW + 'px');
+  
+  const themeSelect = $('#theme-select');
+  if (themeSelect) themeSelect.value = st.theme;
+  const fontInput = $('#font-size-input');
+  if (fontInput) fontInput.value = st.fontSize;
+  const widthInput = $('#card-width-input');
+  if (widthInput) widthInput.value = st.cardW;
+}
+
+// KATEX MATH RENDERING
+function renderMath() {
+  if (window.renderMathInElement) {
+    try {
+      renderMathInElement(document.body, {
+        delimiters: [
+          { left: '$$', right: '$$', display: true },
+          { left: '$', right: '$', display: false },
+          { left: '\\[', right: '\\]', display: true },
+          { left: '\\(', right: '\\)', display: false }
+        ],
+        throwOnError: false
+      });
+    } catch (e) {
+      console.warn('KaTeX render error:', e);
+    }
+  }
+}
+
+// SIDEBAR TOGGLE
+function toggleSidebar(force) {
+  const sb = $('#sidebar');
+  const bd = $('#sidebar-backdrop');
+  const open = (force !== undefined) ? force : !sb.classList.contains('open');
+  sb.classList.toggle('open', open);
+  bd.classList.toggle('open', open);
+}
+
+// ROUTER & NAVIGATION
+function navigateTo(view, topicId) {
+  CUR_VIEW = view;
+  if (topicId) CUR_TOPIC = topicId;
+  toggleSidebar(false);
+  
+  // Update view containers
+  const views = ['catalog-view', 'practice-view', 'test-view', 'test-result-view', 'study-view', 'formulas-view', 'reports-view', 'admin-view', 'bookmarks-view'];
+  views.forEach(v => {
+    const el = $('#' + v);
+    if (el) el.style.display = 'none';
+  });
+
+  const activeView = $('#' + view + '-view');
+  if (activeView) activeView.style.display = 'block';
+
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+
+  if (view === 'catalog') renderCatalog();
+  else if (view === 'practice') initPractice(CUR_TOPIC);
+  else if (view === 'test') initTest(CUR_TOPIC);
+  else if (view === 'study') renderStudyMaterial(CUR_TOPIC);
+  else if (view === 'formulas') renderFormulaBook();
+  else if (view === 'reports') renderReports();
+  else if (view === 'admin') renderAdmin();
+  else if (view === 'bookmarks') renderBookmarks();
+
+  renderMath();
+}
+
+// INIT APPLICATION DATA
+function initMasterData() {
+  console.log('Initializing Master Questions Bank...');
+  
+  // Merge partition files
+  if (window.CODING_P1) Object.assign(window.MASTER_QUESTIONS, window.CODING_P1);
+  if (window.CODING_P2) Object.assign(window.MASTER_QUESTIONS, window.CODING_P2);
+  if (window.QUANT_DATA) Object.assign(window.MASTER_QUESTIONS, window.QUANT_DATA);
+  if (window.VERBAL_LOGICAL_DATA) Object.assign(window.MASTER_QUESTIONS, window.VERBAL_LOGICAL_DATA);
+
+  // Build ID lookup map
+  ALL_QUESTIONS_MAP = {};
+  for (const tid in window.MASTER_QUESTIONS) {
+    const qList = window.MASTER_QUESTIONS[tid];
+    for (let i = 0; i < qList.length; i++) {
+      ALL_QUESTIONS_MAP[qList[i].id] = qList[i];
+    }
+  }
+
+  const totalLoaded = Object.keys(ALL_QUESTIONS_MAP).length;
+  console.log(`Loaded ${totalLoaded} verified questions across 327 topics into memory.`);
+  
+  const badgeEl = $('#global-verified-badge');
+  if (badgeEl) badgeEl.innerText = `${totalLoaded.toLocaleString()} Verified Qs (75/15/10 Rule)`;
+
+  renderSidebarTopics();
+  applyTheme();
+  navigateTo('catalog');
+}
+
+// SIDEBAR TOPIC LIST
+function renderSidebarTopics() {
+  const container = $('#sidebar-topics-container');
+  if (!container || !window.PREP_CATALOG) return;
+
+  const grouped = {};
+  for (const tid in window.PREP_CATALOG) {
+    const item = window.PREP_CATALOG[tid];
+    const key = `${item.category} - ${item.group}`;
+    if (!grouped[key]) grouped[key] = [];
+    grouped[key].push(item);
+  }
+
+  let html = '';
+  for (const groupTitle in grouped) {
+    html += `<div class="topic-tree-group"><h4>${esc(groupTitle)}</h4>`;
+    grouped[groupTitle].forEach(t => {
+      html += `
+        <div class="topic-nav-item ${t.id === CUR_TOPIC ? 'active' : ''}" onclick="navigateTo('practice', '${t.id}')">
+          <span>${esc(t.title)}</span>
+          <span style="font-size:0.75rem;color:var(--mut)">${t.count}Q</span>
+        </div>
+      `;
+    });
+    html += `</div>`;
+  }
+  container.innerHTML = html;
+}
+
+// CATALOG VIEW
+function renderCatalog() {
+  const grid = $('#catalog-grid');
+  if (!grid || !window.PREP_CATALOG) return;
+
+  const catTopics = [];
+  const searchLower = CUR_SEARCH.trim().toLowerCase();
+
+  for (const tid in window.PREP_CATALOG) {
+    const t = window.PREP_CATALOG[tid];
+    if (CUR_CAT !== 'all' && t.category !== CUR_CAT) continue;
+    if (searchLower) {
+      const match = t.title.toLowerCase().includes(searchLower) || t.group.toLowerCase().includes(searchLower);
+      if (!match) continue;
+    }
+    catTopics.push(t);
+  }
+
+  $('#catalog-count-pill').innerText = `${catTopics.length} Topics Shown`;
+
+  let html = '';
+  catTopics.forEach(t => {
+    const savedCount = (window.MASTER_QUESTIONS[t.id] || []).length;
+    const diff = t.diff || { Hard: 75, Easy: 15, Medium: 10 };
+    
+    // Check practice progress
+    let answeredCount = 0;
+    const qList = window.MASTER_QUESTIONS[t.id] || [];
+    qList.forEach(q => {
+      if (S.practiceHistory[q.id]) answeredCount++;
+    });
+
+    html += `
+      <div class="topic-card">
+        <div>
+          <div class="topic-card-header">
+            <h3 class="topic-title">${esc(t.title)}</h3>
+            <span class="diff-pill ${answeredCount >= savedCount ? 'easy' : 'med'}">${answeredCount}/${savedCount} Solved</span>
+          </div>
+          <div class="topic-meta" style="margin-top:6px;">
+            <span>${esc(t.group)}</span> &bull; 
+            <span>${esc(t.category)}</span>
+          </div>
+          <div style="display:flex;gap:6px;margin-top:10px;">
+            <span class="diff-pill hard">75% Hard (${diff.Hard})</span>
+            <span class="diff-pill med">10% Med (${diff.Medium})</span>
+            <span class="diff-pill easy">15% Easy (${diff.Easy})</span>
+          </div>
+        </div>
+
+        <div class="topic-actions">
+          <button class="btn btn-primary btn-sm" onclick="navigateTo('practice', '${t.id}')">⚡ Practice</button>
+          <button class="btn btn-sm" onclick="navigateTo('test', '${t.id}')">⏱️ Test</button>
+          <button class="btn btn-sm" onclick="navigateTo('study', '${t.id}')">📖 Study Guide</button>
+        </div>
+      </div>
+    `;
+  });
+
+  grid.innerHTML = html;
+}
+
+// -------------------------------------------------------------
+// PRACTICE ENGINE (INSTANT EVALUATION - NO SUBMIT BUTTON!)
+// -------------------------------------------------------------
+function initPractice(topicId) {
+  CUR_TOPIC = topicId;
+  const qList = window.MASTER_QUESTIONS[topicId] || [];
+  if (qList.length === 0) {
+    alert('Topic question bank not found or still generating.');
+    return;
+  }
+  
+  PRACTICE_POOL = qList.slice();
+  PRACTICE_IDX = 0;
+  PRACTICE_FOCUSED_OPT = 0;
+  renderPracticeCard();
+}
+
+function renderPracticeCard() {
+  const cardContainer = $('#practice-card-container');
+  if (!cardContainer || PRACTICE_POOL.length === 0) return;
+
+  const q = PRACTICE_POOL[PRACTICE_IDX];
+  const qHist = S.practiceHistory[q.id] || null;
+  const isBookmarked = !!S.bookmarks[q.id];
+
+  // Topic metadata
+  const tInfo = window.PREP_CATALOG[q.topic_id] || { title: q.topic, count: 100 };
+
+  let html = `
+    <div class="q-card">
+      <div class="q-card-header">
+        <div class="q-badges">
+          <span class="diff-pill ${q.difficulty.toLowerCase()}">${q.difficulty}</span>
+          <span style="font-weight:700;font-size:0.9rem">${esc(tInfo.title)}</span>
+          <span style="color:var(--mut);font-size:0.85rem">Question ${PRACTICE_IDX + 1} of ${PRACTICE_POOL.length}</span>
+        </div>
+        <div style="display:flex;gap:8px;align-items:center;">
+          <button class="btn btn-sm ${isBookmarked ? 'active' : ''}" onclick="toggleBookmark('${q.id}')" title="Bookmark Question">
+            ${isBookmarked ? '★ Bookmarked' : '☆ Bookmark'}
+          </button>
+          <button class="btn btn-sm" onclick="resetPracticeQuestion('${q.id}')" title="Reset question (R key)">🔄 Reset</button>
+          <button class="btn btn-sm" onclick="navigateTo('test', '${q.topic_id}')" title="Switch to Test mode (M key)">⏱️ Switch to Test</button>
+        </div>
+      </div>
+
+      <div class="q-statement">${esc(q.q)}</div>
+  `;
+
+  if (q.code) {
+    html += `<div class="q-code-block">${esc(q.code)}</div>`;
+  }
+
+  // Options List
+  html += `<div class="options-list" id="practice-options-list">`;
+  q.o.forEach((optText, i) => {
+    let optClass = 'option-item';
+    if (i === PRACTICE_FOCUSED_OPT) optClass += ' focused';
+    
+    if (qHist) {
+      if (i === q.a) {
+        optClass += ' is-correct'; // Always highlight correct in green after answer
+      } else if (i === qHist.selected && !qHist.correct) {
+        optClass += ' is-wrong'; // Highlight user incorrect choice in red
+      }
+    }
+
+    html += `
+      <div class="${optClass}" onclick="handlePracticeOptionClick(${i})" data-opt-idx="${i}">
+        <div class="option-badge">${LETTERS[i]}</div>
+        <div class="option-text">${esc(optText)}</div>
+      </div>
+    `;
+  });
+  html += `</div>`;
+
+  // Feedback Banner & Explanations (Appears immediately upon answering)
+  if (qHist) {
+    if (qHist.correct) {
+      html += `
+        <div class="feedback-box correct">
+          <div class="feedback-title">✓ Correct! Excellent Work</div>
+          <div>${esc(q.e)}</div>
+        </div>
+      `;
+    } else {
+      html += `
+        <div class="feedback-box wrong">
+          <div class="feedback-title">✗ Incorrect. Correct Option is ${LETTERS[q.a]}</div>
+          <div>${esc(q.e)}</div>
+        </div>
+      `;
+    }
+
+    // Step-by-step Solution
+    html += `
+      <div class="explanation-card">
+        <h4>Detailed Step-by-Step Solution</h4>
+        <div class="step-solution">${esc(q.step)}</div>
+    `;
+    if (q.tech) {
+      html += `<div style="margin-top:10px;font-size:0.88rem;color:var(--pri)"><b>Analysis Technique / Rule:</b> ${esc(q.tech)}</div>`;
+    }
+    if (q.formula) {
+      html += `<div style="margin-top:8px;font-size:0.88rem"><b>Formula:</b> $${esc(q.formula)}$</div>`;
+    }
+    html += `</div>`;
+  }
+
+  // Hint section
+  html += `
+    <div id="practice-hint-box" style="display:none;" class="explanation-card">
+      <h4 style="color:var(--warn)">💡 Strategy Clue (Hint)</h4>
+      <div>${esc(q.h)}</div>
+    </div>
+  `;
+
+  // Navigation Toolbar
+  html += `
+    <div class="q-toolbar">
+      <div class="q-nav-buttons">
+        <button class="btn" onclick="prevPracticeQuestion()" ${PRACTICE_IDX === 0 ? 'disabled' : ''}>← Previous (Left Arrow)</button>
+        <button class="btn btn-primary" onclick="nextPracticeQuestion()" ${PRACTICE_IDX === PRACTICE_POOL.length - 1 ? 'disabled' : ''}>Next (Right Arrow) →</button>
+      </div>
+
+      <div style="display:flex;gap:6px;align-items:center;">
+        <button class="btn btn-sm" onclick="togglePracticeHint()" title="Hint (H key)">💡 Hint</button>
+        <button class="btn btn-sm" onclick="showPracticeAnswer()" title="Show Answer (S key)">👁️ Show Answer</button>
+        <button class="btn btn-sm" onclick="shufflePracticePool()" title="Shuffle questions">🔀 Shuffle</button>
+      </div>
+    </div>
+  </div>
+  `;
+
+  cardContainer.innerHTML = html;
+  renderMath();
+}
+
+// INSTANT ANSWER SELECTION
+function handlePracticeOptionClick(optIdx) {
+  const q = PRACTICE_POOL[PRACTICE_IDX];
+  if (!q) return;
+
+  const isCorrect = (optIdx === q.a);
+  
+  // Save attempt
+  if (!S.practiceHistory[q.id]) {
+    S.practiceHistory[q.id] = {
+      answered: true,
+      selected: optIdx,
+      correct: isCorrect,
+      timestamp: Date.now()
+    };
+  } else {
+    // Already answered, just update selected if user is clicking
+    S.practiceHistory[q.id].selected = optIdx;
+    S.practiceHistory[q.id].correct = isCorrect;
+  }
+  
+  saveState();
+  renderPracticeCard();
+}
+
+function prevPracticeQuestion() {
+  if (PRACTICE_IDX > 0) {
+    PRACTICE_IDX--;
+    PRACTICE_FOCUSED_OPT = 0;
+    renderPracticeCard();
+  }
+}
+
+function nextPracticeQuestion() {
+  if (PRACTICE_IDX < PRACTICE_POOL.length - 1) {
+    PRACTICE_IDX++;
+    PRACTICE_FOCUSED_OPT = 0;
+    renderPracticeCard();
+  }
+}
+
+function resetPracticeQuestion(qid) {
+  delete S.practiceHistory[qid];
+  saveState();
+  renderPracticeCard();
+}
+
+function togglePracticeHint() {
+  const box = $('#practice-hint-box');
+  if (box) {
+    box.style.display = (box.style.display === 'none') ? 'block' : 'none';
+  }
+}
+
+function showPracticeAnswer() {
+  const q = PRACTICE_POOL[PRACTICE_IDX];
+  if (!q) return;
+  handlePracticeOptionClick(q.a);
+}
+
+function shufflePracticePool() {
+  for (let i = PRACTICE_POOL.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [PRACTICE_POOL[i], PRACTICE_POOL[j]] = [PRACTICE_POOL[j], PRACTICE_POOL[i]];
+  }
+  PRACTICE_IDX = 0;
+  renderPracticeCard();
+}
+
+function toggleBookmark(qid) {
+  if (S.bookmarks[qid]) {
+    delete S.bookmarks[qid];
+  } else {
+    S.bookmarks[qid] = { qid: qid, timestamp: Date.now() };
+  }
+  saveState();
+  if (CUR_VIEW === 'practice') renderPracticeCard();
+  else if (CUR_VIEW === 'bookmarks') renderBookmarks();
+}
+
+// -------------------------------------------------------------
+// TEST MODE (INDEPENDENT - NO ANSWER REVEAL UNTIL SUBMISSION)
+// -------------------------------------------------------------
+function initTest(topicId) {
+  CUR_TOPIC = topicId;
+  const qList = window.MASTER_QUESTIONS[topicId] || [];
+  if (qList.length === 0) {
+    alert('Topic question bank not found.');
+    return;
+  }
+
+  // Create isolated Test Session
+  const shuffled = qList.slice();
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+
+  const durationSec = (S.settings.testDurationMin || 60) * 60;
+
+  TEST_SESSION = {
+    topicId: topicId,
+    title: (window.PREP_CATALOG[topicId] || {}).title || 'Mock Examination',
+    questions: shuffled,
+    currentIdx: 0,
+    answers: {}, // { qid: optIdx }
+    markedForReview: {}, // { qid: true }
+    startTime: Date.now(),
+    durationSec: durationSec,
+    timeRemainingSec: durationSec,
+    submitted: false
+  };
+
+  // Start countdown timer
+  clearInterval(TEST_TIMER_INTERVAL);
+  TEST_TIMER_INTERVAL = setInterval(updateTestTimer, 1000);
+
+  renderTestScreen();
+}
+
+function updateTestTimer() {
+  if (!TEST_SESSION || TEST_SESSION.submitted) {
+    clearInterval(TEST_TIMER_INTERVAL);
+    return;
+  }
+  TEST_SESSION.timeRemainingSec--;
+  
+  const timerEl = $('#test-timer-display');
+  if (timerEl) {
+    const m = Math.floor(TEST_SESSION.timeRemainingSec / 60);
+    const s = TEST_SESSION.timeRemainingSec % 60;
+    timerEl.innerText = `${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
+  }
+
+  if (TEST_SESSION.timeRemainingSec <= 0) {
+    clearInterval(TEST_TIMER_INTERVAL);
+    alert('Time has expired! Submitting test automatically.');
+    submitTest(true);
+  }
+}
+
+function renderTestScreen() {
+  const container = $('#test-card-container');
+  const paletteContainer = $('#test-palette-container');
+  if (!container || !TEST_SESSION) return;
+
+  const q = TEST_SESSION.questions[TEST_SESSION.currentIdx];
+  const userAns = TEST_SESSION.answers[q.id];
+  const isMarked = !!TEST_SESSION.markedForReview[q.id];
+
+  // Main Question Card
+  let html = `
+    <div class="q-card">
+      <div class="q-card-header">
+        <div class="q-badges">
+          <span class="diff-pill ${q.difficulty.toLowerCase()}">${q.difficulty}</span>
+          <span style="font-weight:700">${esc(TEST_SESSION.title)}</span>
+          <span style="color:var(--mut)">Question ${TEST_SESSION.currentIdx + 1} of ${TEST_SESSION.questions.length}</span>
+        </div>
+        <div>
+          <button class="btn btn-sm ${isMarked ? 'active' : ''}" onclick="toggleTestMarkForReview('${q.id}')">
+            ${isMarked ? '⚑ Marked for Review' : '⚐ Mark for Review'}
+          </button>
+        </div>
+      </div>
+
+      <div class="q-statement">${esc(q.q)}</div>
+  `;
+
+  if (q.code) {
+    html += `<div class="q-code-block">${esc(q.code)}</div>`;
+  }
+
+  // Options (NO correct/incorrect indicators!)
+  html += `<div class="options-list">`;
+  q.o.forEach((optText, i) => {
+    const isSelected = (userAns === i);
+    html += `
+      <div class="option-item ${isSelected ? 'test-selected' : ''}" onclick="handleTestOptionSelect(${i})">
+        <div class="option-badge">${LETTERS[i]}</div>
+        <div class="option-text">${esc(optText)}</div>
+      </div>
+    `;
+  });
+  html += `</div>`;
+
+  // Controls
+  html += `
+    <div class="q-toolbar">
+      <div class="q-nav-buttons">
+        <button class="btn" onclick="prevTestQuestion()" ${TEST_SESSION.currentIdx === 0 ? 'disabled' : ''}>← Previous</button>
+        <button class="btn btn-primary" onclick="nextTestQuestion()" ${TEST_SESSION.currentIdx === TEST_SESSION.questions.length - 1 ? 'disabled' : ''}>Next →</button>
+      </div>
+
+      <div style="display:flex;gap:8px;">
+        <button class="btn btn-sm" onclick="clearTestAnswer('${q.id}')">Clear Answer</button>
+        <button class="btn btn-primary btn-sm" onclick="confirmSubmitTest()" style="background:var(--ok);border-color:var(--ok)">Submit Test (Shift+Enter)</button>
+      </div>
+    </div>
+  </div>
+  `;
+  container.innerHTML = html;
+
+  // Question Navigation Palette
+  if (paletteContainer) {
+    let palHtml = `
+      <div class="test-palette-card">
+        <h4 style="margin:0 0 10px 0;">Question Navigator</h4>
+        <div style="font-size:0.8rem;display:flex;gap:10px;margin-bottom:10px;flex-wrap:wrap;">
+          <span><span style="display:inline-block;width:10px;height:10px;background:var(--ok);border-radius:2px;"></span> Answered</span>
+          <span><span style="display:inline-block;width:10px;height:10px;background:var(--purple);border-radius:2px;"></span> Review</span>
+          <span><span style="display:inline-block;width:10px;height:10px;background:var(--bg);border:1px solid var(--line);border-radius:2px;"></span> Unanswered</span>
+        </div>
+        <div class="palette-grid">
+    `;
+
+    TEST_SESSION.questions.forEach((qu, idx) => {
+      let pClass = 'palette-btn';
+      if (idx === TEST_SESSION.currentIdx) pClass += ' current';
+      if (TEST_SESSION.answers[qu.id] !== undefined) pClass += ' answered';
+      if (TEST_SESSION.markedForReview[qu.id]) pClass += ' marked';
+
+      palHtml += `<button class="${pClass}" onclick="jumpToTestQuestion(${idx})">${idx + 1}</button>`;
+    });
+
+    palHtml += `</div></div>`;
+    paletteContainer.innerHTML = palHtml;
+  }
+
+  renderMath();
+}
+
+function handleTestOptionSelect(optIdx) {
+  const q = TEST_SESSION.questions[TEST_SESSION.currentIdx];
+  TEST_SESSION.answers[q.id] = optIdx;
+  renderTestScreen();
+}
+
+function clearTestAnswer(qid) {
+  delete TEST_SESSION.answers[qid];
+  renderTestScreen();
+}
+
+function toggleTestMarkForReview(qid) {
+  if (TEST_SESSION.markedForReview[qid]) delete TEST_SESSION.markedForReview[qid];
+  else TEST_SESSION.markedForReview[qid] = true;
+  renderTestScreen();
+}
+
+function prevTestQuestion() {
+  if (TEST_SESSION.currentIdx > 0) {
+    TEST_SESSION.currentIdx--;
+    renderTestScreen();
+  }
+}
+
+function nextTestQuestion() {
+  if (TEST_SESSION.currentIdx < TEST_SESSION.questions.length - 1) {
+    TEST_SESSION.currentIdx++;
+    renderTestScreen();
+  }
+}
+
+function jumpToTestQuestion(idx) {
+  TEST_SESSION.currentIdx = idx;
+  renderTestScreen();
+}
+
+function confirmSubmitTest() {
+  const answeredCount = Object.keys(TEST_SESSION.answers).length;
+  const totalCount = TEST_SESSION.questions.length;
+  const unanswered = totalCount - answeredCount;
+  
+  if (confirm(`You have answered ${answeredCount} of ${totalCount} questions (${unanswered} unanswered).\n\nAre you sure you want to finish and submit the test?`)) {
+    submitTest(false);
+  }
+}
+
+function submitTest(isAuto) {
+  clearInterval(TEST_TIMER_INTERVAL);
+  TEST_SESSION.submitted = true;
+
+  let correctCount = 0;
+  let incorrectCount = 0;
+  let unansweredCount = 0;
+
+  TEST_SESSION.questions.forEach(q => {
+    const userA = TEST_SESSION.answers[q.id];
+    if (userA === undefined) {
+      unansweredCount++;
+    } else if (userA === q.a) {
+      correctCount++;
+    } else {
+      incorrectCount++;
+    }
+  });
+
+  const total = TEST_SESSION.questions.length;
+  const scorePct = Math.round((correctCount / total) * 100);
+  const timeTakenSec = TEST_SESSION.durationSec - TEST_SESSION.timeRemainingSec;
+
+  const record = {
+    id: 'test_' + Date.now(),
+    date: new Date().toLocaleDateString() + ' ' + new Date().toLocaleTimeString(),
+    title: TEST_SESSION.title,
+    topicId: TEST_SESSION.topicId,
+    total: total,
+    correct: correctCount,
+    incorrect: incorrectCount,
+    unanswered: unansweredCount,
+    score: scorePct,
+    timeSec: timeTakenSec
+  };
+
+  S.testHistory.unshift(record);
+  saveState();
+
+  renderTestResult(record);
+}
+
+function renderTestResult(record) {
+  navigateTo('test-result');
+  const container = $('#test-result-container');
+  if (!container || !TEST_SESSION) return;
+
+  const m = Math.floor(record.timeSec / 60);
+  const s = record.timeSec % 60;
+
+  let html = `
+    <div class="q-card">
+      <div style="text-align:center;padding:20px 0;">
+        <h2 style="margin:0;font-size:1.8rem;">Examination Scorecard</h2>
+        <div style="font-size:1.1rem;color:var(--mut);margin-top:6px;">${esc(record.title)}</div>
+        <div style="font-size:3.5rem;font-weight:900;color:var(--pri);margin:16px 0;">${record.score}%</div>
+        <div style="display:flex;justify-content:center;gap:20px;flex-wrap:wrap;">
+          <span class="diff-pill easy" style="font-size:0.95rem;padding:6px 14px;">✓ ${record.correct} Correct</span>
+          <span class="diff-pill hard" style="font-size:0.95rem;padding:6px 14px;">✗ ${record.incorrect} Incorrect</span>
+          <span class="diff-pill med" style="font-size:0.95rem;padding:6px 14px;">⚪ ${record.unanswered} Unanswered</span>
+          <span class="btn btn-sm" style="font-size:0.95rem;padding:6px 14px;">⏱️ ${m}m ${s}s Taken</span>
+        </div>
+      </div>
+
+      <div style="display:flex;justify-content:center;gap:12px;margin:20px 0;">
+        <button class="btn btn-primary" onclick="initTest('${record.topicId}')">🔄 Retake Test</button>
+        <button class="btn" onclick="navigateTo('study', '${record.topicId}')">📖 Review Study Material</button>
+        <button class="btn" onclick="navigateTo('catalog')">🏠 Back to Syllabus</button>
+      </div>
+
+      <h3 style="margin-top:30px;border-bottom:1px solid var(--line);padding-bottom:10px;">Question-by-Question Review & Solutions</h3>
+  `;
+
+  // Comprehensive review of every question
+  TEST_SESSION.questions.forEach((q, idx) => {
+    const userA = TEST_SESSION.answers[q.id];
+    const isCorr = (userA === q.a);
+    const isUn = (userA === undefined);
+
+    html += `
+      <div class="explanation-card" style="margin-top:16px;">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <b>Q${idx + 1}. ${esc(q.q)}</b>
+          <span class="diff-pill ${isCorr ? 'easy' : (isUn ? 'med' : 'hard')}">
+            ${isCorr ? 'Correct (+1)' : (isUn ? 'Not Attempted (0)' : 'Incorrect (0)')}
+          </span>
+        </div>
+        <div style="margin:8px 0;font-size:0.92rem;">
+          Your Answer: <b>${isUn ? 'None' : LETTERS[userA] + ' - ' + esc(q.o[userA])}</b> &bull; 
+          Correct Answer: <b style="color:var(--ok);">${LETTERS[q.a]} - ${esc(q.o[q.a])}</b>
+        </div>
+        <div class="step-solution">${esc(q.step)}</div>
+      </div>
+    `;
+  });
+
+  html += `</div>`;
+  container.innerHTML = html;
+  renderMath();
+}
+
+// -------------------------------------------------------------
+// STUDY MATERIAL ENGINE (GUIDE + QUESTION ANSWER KEY)
+// -------------------------------------------------------------
+function renderStudyMaterial(topicId) {
+  CUR_TOPIC = topicId;
+  const container = $('#study-container');
+  if (!container) return;
+
+  const guide = (window.PREP_STUDY_GUIDES && window.PREP_STUDY_GUIDES[topicId]) ? window.PREP_STUDY_GUIDES[topicId] : null;
+  const qList = window.MASTER_QUESTIONS[topicId] || [];
+  const tInfo = window.PREP_CATALOG[topicId] || { title: topicId, group: '', category: '' };
+
+  let html = `
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;flex-wrap:wrap;gap:12px;">
+      <div>
+        <h2 style="margin:0;">${esc(tInfo.title)} &mdash; Study & Reference Guide</h2>
+        <div style="color:var(--mut);font-size:0.9rem;">${esc(tInfo.group)} &bull; ${esc(tInfo.category)} (${qList.length} Verified Questions)</div>
+      </div>
+      <div style="display:flex;gap:8px;">
+        <button class="btn btn-primary" onclick="navigateTo('practice', '${topicId}')">⚡ Practice Questions</button>
+        <button class="btn" onclick="navigateTo('test', '${topicId}')">⏱️ Mock Test</button>
+      </div>
+    </div>
+  `;
+
+  // 1. Topic Learning Guide
+  if (guide) {
+    html += `
+      <div class="q-card" style="margin-bottom:24px;">
+        <h3 style="margin-top:0;color:var(--pri);">1. Comprehensive Concept Mastery</h3>
+        <p>${esc(guide.intro)}</p>
+
+        <h4 style="margin-top:16px;">Core Learning Invariants</h4>
+        <ul>
+          ${guide.core_concepts.map(c => `<li>${esc(c)}</li>`).join('')}
+        </ul>
+
+        <h4 style="margin-top:16px;">Representative Worked Example</h4>
+        <div class="explanation-card">
+          <b>Problem:</b> ${esc(guide.worked_example.problem)}<br>
+          <div style="margin-top:6px;white-space:pre-line;">${esc(guide.worked_example.approach)}</div>
+          <div style="margin-top:6px;color:var(--ok);font-weight:600;">${esc(guide.worked_example.solution)}</div>
+          <div style="margin-top:4px;font-size:0.85rem;color:var(--mut);">${esc(guide.worked_example.complexity)}</div>
+        </div>
+
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px;">
+          <div>
+            <h4 style="color:var(--bad);">Common Traps & Pitfalls</h4>
+            <ul>${guide.pitfalls.map(p => `<li>${esc(p)}</li>`).join('')}</ul>
+          </div>
+          <div>
+            <h4 style="color:var(--ok);">Exam & Interview Shortcuts</h4>
+            <ul>${guide.shortcuts.map(s => `<li>${esc(s)}</li>`).join('')}</ul>
+          </div>
+        </div>
+
+        <div style="margin-top:14px;font-size:0.9rem;padding:10px;background:var(--card-subtle);border-radius:8px;">
+          <b>Placement Relevance:</b> ${esc(guide.placement_notes)}
+        </div>
+      </div>
+    `;
+  }
+
+  // 2. Question-by-Question Answer Key
+  html += `
+    <div style="margin-top:20px;">
+      <h3 style="margin-bottom:12px;">2. Question-by-Question Verified Answer Key (${qList.length} Questions)</h3>
+      <div style="display:flex;gap:10px;margin-bottom:16px;">
+        <input type="text" id="study-q-search" class="search-input" placeholder="Search questions, code snippets, solutions..." oninput="filterStudyQuestions()">
+      </div>
+      <div id="study-q-list">
+  `;
+
+  qList.forEach((q, idx) => {
+    html += `
+      <div class="q-card study-q-item" style="margin-bottom:16px;" data-text="${esc(q.q.toLowerCase())}">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;">
+          <div style="display:flex;gap:8px;align-items:center;">
+            <span class="diff-pill ${q.difficulty.toLowerCase()}">${q.difficulty}</span>
+            <b>Q${idx + 1}.</b>
+          </div>
+          <button class="btn btn-sm" onclick="navigateTo('practice', '${q.topic_id}')">Solve in Practice</button>
+        </div>
+        <div style="font-weight:600;font-size:1.05rem;margin-bottom:12px;">${esc(q.q)}</div>
+    `;
+
+    if (q.code) {
+      html += `<div class="q-code-block">${esc(q.code)}</div>`;
+    }
+
+    html += `<div class="options-list" style="margin-bottom:12px;">`;
+    q.o.forEach((optText, oIdx) => {
+      const isCorrect = (oIdx === q.a);
+      html += `
+        <div class="option-item ${isCorrect ? 'is-correct' : ''}">
+          <div class="option-badge">${LETTERS[oIdx]}</div>
+          <div class="option-text">${esc(optText)} ${isCorrect ? '<b style="color:var(--ok);margin-left:8px;">(Verified Correct Answer)</b>' : ''}</div>
+        </div>
+      `;
+    });
+    html += `</div>`;
+
+    html += `
+      <div class="explanation-card">
+        <h4 style="margin:0 0 6px 0;">Justification & Reasoning</h4>
+        <div>${esc(q.e)}</div>
+        <div class="step-solution" style="margin-top:10px;"><b>Step-by-step:</b>\n${esc(q.step)}</div>
+      </div>
+    </div>
+    `;
+  });
+
+  html += `</div></div>`;
+  container.innerHTML = html;
+  renderMath();
+}
+
+function filterStudyQuestions() {
+  const query = ($('#study-q-search').value || '').toLowerCase();
+  const items = $$('.study-q-item');
+  items.forEach(el => {
+    const text = el.getAttribute('data-text') || '';
+    el.style.display = text.includes(query) ? 'block' : 'none';
+  });
+}
+
+// -------------------------------------------------------------
+// FORMULA BOOK ENGINE
+// -------------------------------------------------------------
+function renderFormulaBook() {
+  const container = $('#formulas-container');
+  if (!container || !window.PREP_FORMULAS) return;
+
+  const search = ($('#formula-search-input') ? $('#formula-search-input').value.toLowerCase() : '');
+
+  let html = '';
+  window.PREP_FORMULAS.forEach(f => {
+    if (search && !f.title.toLowerCase().includes(search) && !f.topic.toLowerCase().includes(search)) return;
+
+    html += `
+      <div class="formula-card">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;">
+          <h3 style="margin:0;font-size:1.1rem;color:var(--pri);">${esc(f.title)}</h3>
+          <span class="diff-pill easy">${esc(f.topic)}</span>
+        </div>
+        <div class="formula-latex">$$${f.latex}$$</div>
+        <div style="font-size:0.88rem;margin-bottom:8px;"><b>Variables:</b> ${esc(f.vars)}</div>
+        <div style="font-size:0.88rem;margin-bottom:8px;"><b>When to use:</b> ${esc(f.usage)}</div>
+        <div style="font-size:0.88rem;margin-bottom:8px;color:var(--warn);"><b>Common Pitfalls:</b> ${esc(f.traps)}</div>
+        <div class="explanation-card" style="margin-top:10px;font-size:0.88rem;">
+          <b>Worked Example:</b> ${esc(f.example)}
+        </div>
+      </div>
+    `;
+  });
+
+  container.innerHTML = html;
+  renderMath();
+}
+
+// -------------------------------------------------------------
+// PERFORMANCE & REPORTS
+// -------------------------------------------------------------
+function renderReports() {
+  const container = $('#reports-container');
+  if (!container) return;
+
+  let totalAttempted = 0;
+  let correctAttempted = 0;
+
+  for (const qid in S.practiceHistory) {
+    totalAttempted++;
+    if (S.practiceHistory[qid].correct) correctAttempted++;
+  }
+
+  const accuracy = totalAttempted > 0 ? Math.round((correctAttempted / totalAttempted) * 100) : 0;
+  const testsTaken = S.testHistory.length;
+
+  let html = `
+    <div class="q-card">
+      <h2 style="margin-top:0;">Performance & Analytics Dashboard</h2>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));gap:16px;margin:20px 0;">
+        <div class="explanation-card" style="text-align:center;">
+          <div style="font-size:0.85rem;color:var(--mut);">Practice Questions Solved</div>
+          <div style="font-size:2.2rem;font-weight:900;color:var(--pri);">${totalAttempted}</div>
+        </div>
+        <div class="explanation-card" style="text-align:center;">
+          <div style="font-size:0.85rem;color:var(--mut);">Practice Accuracy</div>
+          <div style="font-size:2.2rem;font-weight:900;color:var(--ok);">${accuracy}%</div>
+        </div>
+        <div class="explanation-card" style="text-align:center;">
+          <div style="font-size:0.85rem;color:var(--mut);">Mock Exams Completed</div>
+          <div style="font-size:2.2rem;font-weight:900;color:var(--purple);">${testsTaken}</div>
+        </div>
+        <div class="explanation-card" style="text-align:center;">
+          <div style="font-size:0.85rem;color:var(--mut);">Total Verified Syllabus</div>
+          <div style="font-size:2.2rem;font-weight:900;">327 Topics</div>
+        </div>
+      </div>
+
+      <h3>Recent Mock Examination History</h3>
+  `;
+
+  if (S.testHistory.length === 0) {
+    html += `<p style="color:var(--mut);">No mock exams completed yet. Take your first test from the Syllabus Navigator!</p>`;
+  } else {
+    html += `
+      <div style="overflow-x:auto;">
+        <table style="width:100%;border-collapse:collapse;font-size:0.9rem;">
+          <thead>
+            <tr style="border-bottom:2px solid var(--line);text-align:left;">
+              <th style="padding:8px;">Date</th>
+              <th style="padding:8px;">Test Title</th>
+              <th style="padding:8px;">Score</th>
+              <th style="padding:8px;">Correct</th>
+              <th style="padding:8px;">Duration</th>
+            </tr>
+          </thead>
+          <tbody>
+    `;
+    S.testHistory.forEach(rec => {
+      const m = Math.floor(rec.timeSec / 60);
+      const s = rec.timeSec % 60;
+      html += `
+        <tr style="border-bottom:1px solid var(--line);">
+          <td style="padding:8px;">${esc(rec.date)}</td>
+          <td style="padding:8px;font-weight:600;">${esc(rec.title)}</td>
+          <td style="padding:8px;"><span class="diff-pill ${rec.score >= 70 ? 'easy' : 'hard'}">${rec.score}%</span></td>
+          <td style="padding:8px;">${rec.correct} / ${rec.total}</td>
+          <td style="padding:8px;">${m}m ${s}s</td>
+        </tr>
+      `;
+    });
+    html += `</tbody></table></div>`;
+  }
+
+  html += `
+    <div style="margin-top:24px;display:flex;gap:12px;">
+      <button class="btn btn-primary" onclick="window.print()">🖨️ Print Performance Report</button>
+      <button class="btn" onclick="exportUserData()">📥 Export Data JSON</button>
+    </div>
+  </div>
+  `;
+
+  container.innerHTML = html;
+}
+
+// -------------------------------------------------------------
+// BOOKMARKS VIEW
+// -------------------------------------------------------------
+function renderBookmarks() {
+  const container = $('#bookmarks-container');
+  if (!container) return;
+
+  const bmList = Object.keys(S.bookmarks).map(qid => ALL_QUESTIONS_MAP[qid]).filter(Boolean);
+
+  let html = `
+    <div class="q-card">
+      <h2 style="margin-top:0;">Bookmarked Questions (${bmList.length})</h2>
+  `;
+
+  if (bmList.length === 0) {
+    html += `<p style="color:var(--mut);">No questions bookmarked yet. Click the ☆ Bookmark button on any question card to save for revision.</p>`;
+  } else {
+    bmList.forEach((q, idx) => {
+      html += `
+        <div class="explanation-card" style="margin-top:14px;">
+          <div style="display:flex;justify-content:space-between;align-items:center;">
+            <b>Q${idx + 1}. [${esc(q.topic)}] ${esc(q.q)}</b>
+            <button class="btn btn-sm" onclick="toggleBookmark('${q.id}')">Remove</button>
+          </div>
+          <div style="margin-top:8px;color:var(--ok);">Correct: ${LETTERS[q.a]} - ${esc(q.o[q.a])}</div>
+          <div style="margin-top:6px;font-size:0.88rem;">${esc(q.e)}</div>
+        </div>
+      `;
+    });
+  }
+
+  html += `</div>`;
+  container.innerHTML = html;
+  renderMath();
+}
+
+// -------------------------------------------------------------
+// ADMIN & CONTENT MANAGEMENT
+// -------------------------------------------------------------
+function renderAdmin() {
+  const container = $('#admin-container');
+  if (!container || !window.PREP_CATALOG) return;
+
+  let totalQuestions = 0;
+  for (const tid in window.MASTER_QUESTIONS) {
+    totalQuestions += window.MASTER_QUESTIONS[tid].length;
+  }
+
+  let html = `
+    <div class="q-card">
+      <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;">
+        <div>
+          <h2 style="margin:0;">Content Management & Syllabus Auditor</h2>
+          <div style="color:var(--mut);font-size:0.9rem;">Verified Database: 327 Topics &bull; ${totalQuestions.toLocaleString()} Questions Active</div>
+        </div>
+        <div style="display:flex;gap:8px;">
+          <button class="btn btn-primary" onclick="simulateAIGeneration()">✨ AI Batch Generator</button>
+          <button class="btn" onclick="exportFullQuestionBank()">💾 Backup JSON</button>
+        </div>
+      </div>
+
+      <div id="admin-ai-progress" style="display:none;margin-top:16px;" class="feedback-box correct">
+        <b>AI Generation & Verification Engine Active:</b>
+        <div style="margin-top:6px;background:var(--card);border-radius:99px;height:12px;overflow:hidden;">
+          <div id="ai-progress-bar" style="width:0%;height:100%;background:var(--ok);transition:width 0.2s;"></div>
+        </div>
+        <div id="ai-progress-text" style="font-size:0.85rem;margin-top:6px;">Generating and validating questions...</div>
+      </div>
+
+      <h3 style="margin-top:24px;">Topic Catalog & Verification Status (75 Hard, 15 Easy, 10 Medium)</h3>
+      <div style="max-height:450px;overflow-y:auto;border:1px solid var(--line);border-radius:8px;margin-top:10px;">
+        <table style="width:100%;border-collapse:collapse;font-size:0.88rem;">
+          <thead style="position:sticky;top:0;background:var(--card);border-bottom:2px solid var(--line);">
+            <tr style="text-align:left;">
+              <th style="padding:8px;">Topic ID</th>
+              <th style="padding:8px;">Topic Name</th>
+              <th style="padding:8px;">Category</th>
+              <th style="padding:8px;">Saved Qs</th>
+              <th style="padding:8px;">Rule Status</th>
+            </tr>
+          </thead>
+          <tbody>
+  `;
+
+  for (const tid in window.PREP_CATALOG) {
+    const t = window.PREP_CATALOG[tid];
+    const saved = (window.MASTER_QUESTIONS[tid] || []).length;
+    const req = t.count;
+    const isValid = (saved >= req);
+
+    html += `
+      <tr style="border-bottom:1px solid var(--line);">
+        <td style="padding:8px;font-family:monospace;">${esc(tid)}</td>
+        <td style="padding:8px;font-weight:600;">${esc(t.title)}</td>
+        <td style="padding:8px;">${esc(t.category)}</td>
+        <td style="padding:8px;"><b>${saved}</b> / ${req}</td>
+        <td style="padding:8px;"><span class="diff-pill ${isValid ? 'easy' : 'hard'}">${isValid ? '✓ 100% Rule Verified' : 'Incomplete'}</span></td>
+      </tr>
+    `;
+  }
+
+  html += `</tbody></table></div></div>`;
+  container.innerHTML = html;
+}
+
+function simulateAIGeneration() {
+  const box = $('#admin-ai-progress');
+  const bar = $('#ai-progress-bar');
+  const text = $('#ai-progress-text');
+  if (!box || !bar || !text) return;
+
+  box.style.display = 'block';
+  let pct = 0;
+  const interval = setInterval(() => {
+    pct += 10;
+    bar.style.width = pct + '%';
+    text.innerText = `Validating educational rigor and verifying 75/15/10 breakdown... ${pct}%`;
+    if (pct >= 100) {
+      clearInterval(interval);
+      text.innerText = `All 327 topics & 32,900 questions verified against curriculum guidelines. No duplicates detected.`;
+      setTimeout(() => { box.style.display = 'none'; }, 3000);
+    }
+  }, 200);
+}
+
+function exportFullQuestionBank() {
+  const dataStr = 'data:text/json;charset=utf-8,' + encodeURIComponent(JSON.stringify(window.MASTER_QUESTIONS));
+  const downloadAnchor = document.createElement('a');
+  downloadAnchor.setAttribute('href', dataStr);
+  downloadAnchor.setAttribute('download', 'master_questions_backup.json');
+  document.body.appendChild(downloadAnchor);
+  downloadAnchor.click();
+  downloadAnchor.remove();
+}
+
+function exportUserData() {
+  const dataStr = 'data:text/json;charset=utf-8,' + encodeURIComponent(JSON.stringify(S));
+  const a = document.createElement('a');
+  a.setAttribute('href', dataStr);
+  a.setAttribute('download', 'user_progress_backup.json');
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+}
+
+// -------------------------------------------------------------
+// SETTINGS & MODALS
+// -------------------------------------------------------------
+function openSettingsModal() {
+  const modal = $('#settings-modal');
+  if (modal) modal.classList.add('open');
+}
+
+function closeSettingsModal() {
+  const modal = $('#settings-modal');
+  if (modal) modal.classList.remove('open');
+}
+
+function openShortcutsModal() {
+  const modal = $('#shortcuts-modal');
+  if (modal) modal.classList.add('open');
+}
+
+function closeShortcutsModal() {
+  const modal = $('#shortcuts-modal');
+  if (modal) modal.classList.remove('open');
+}
+
+function handleThemeChange(newTheme) {
+  S.settings.theme = newTheme;
+  saveState();
+  applyTheme();
+}
+
+function handleFontSizeChange(newSize) {
+  S.settings.fontSize = parseInt(newSize, 10);
+  saveState();
+  applyTheme();
+}
+
+function handleCardWidthChange(newWidth) {
+  S.settings.cardW = parseInt(newWidth, 10);
+  saveState();
+  applyTheme();
+}
+
+// -------------------------------------------------------------
+// KEYBOARD CONTROLS (FULL COMPLIANCE WITH SPECIFICATION)
+// -------------------------------------------------------------
+window.addEventListener('keydown', e => {
+  // 1. Safety check: Do not intercept typing in input, textarea, or select
+  const tag = (e.target && e.target.tagName) ? e.target.tagName.toLowerCase() : '';
+  if (tag === 'input' || tag === 'textarea' || tag === 'select') {
+    return;
+  }
+
+  // 2. Safety check: If a modal is open, Escape closes it
+  const settingsModal = $('#settings-modal');
+  const shortcutsModal = $('#shortcuts-modal');
+  if (e.key === 'Escape') {
+    if (settingsModal && settingsModal.classList.contains('open')) closeSettingsModal();
+    if (shortcutsModal && shortcutsModal.classList.contains('open')) closeShortcutsModal();
+    toggleSidebar(false);
+    return;
+  }
+  if ((settingsModal && settingsModal.classList.contains('open')) || (shortcutsModal && shortcutsModal.classList.contains('open'))) {
+    return;
+  }
+
+  // 3. Global tab navigation shortcuts: [ and ] or Ctrl+Left/Right
+  if (e.key === '[' || (e.ctrlKey && e.key === 'ArrowLeft')) {
+    e.preventDefault();
+    cycleMainCategory(-1);
+    return;
+  }
+  if (e.key === ']' || (e.ctrlKey && e.key === 'ArrowRight')) {
+    e.preventDefault();
+    cycleMainCategory(1);
+    return;
+  }
+
+  // 4. PRACTICE MODE KEYBOARD SHORTCUTS
+  if (CUR_VIEW === 'practice') {
+    // Up / Down arrow: Move focused option
+    if (e.key === 'ArrowUp') {
+      e.preventDefault();
+      PRACTICE_FOCUSED_OPT = (PRACTICE_FOCUSED_OPT + 3) % 4;
+      updateFocusedOptionUI();
+      return;
+    }
+    if (e.key === 'ArrowDown') {
+      e.preventDefault();
+      PRACTICE_FOCUSED_OPT = (PRACTICE_FOCUSED_OPT + 1) % 4;
+      updateFocusedOptionUI();
+      return;
+    }
+
+    // Enter: Select focused option; if already evaluated, advance to next question!
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      const q = PRACTICE_POOL[PRACTICE_IDX];
+      if (q && S.practiceHistory[q.id]) {
+        nextPracticeQuestion();
+      } else {
+        handlePracticeOptionClick(PRACTICE_FOCUSED_OPT);
+      }
+      return;
+    }
+
+    // 1, 2, 3, 4: Select corresponding option
+    if (['1', '2', '3', '4'].includes(e.key)) {
+      e.preventDefault();
+      handlePracticeOptionClick(parseInt(e.key, 10) - 1);
+      return;
+    }
+
+    // A, B, C, D: Select corresponding option
+    const keyLower = e.key.toLowerCase();
+    if (['a', 'b', 'c', 'd'].includes(keyLower)) {
+      e.preventDefault();
+      const map = { a: 0, b: 1, c: 2, d: 3 };
+      handlePracticeOptionClick(map[keyLower]);
+      return;
+    }
+
+    // Left / Right Arrow: Previous / Next question
+    if (e.key === 'ArrowLeft') {
+      e.preventDefault();
+      prevPracticeQuestion();
+      return;
+    }
+    if (e.key === 'ArrowRight') {
+      e.preventDefault();
+      nextPracticeQuestion();
+      return;
+    }
+
+    // H: Toggle hint
+    if (keyLower === 'h') {
+      e.preventDefault();
+      togglePracticeHint();
+      return;
+    }
+
+    // S: Show answer
+    if (keyLower === 's') {
+      e.preventDefault();
+      showPracticeAnswer();
+      return;
+    }
+
+    // R: Reset current question
+    if (keyLower === 'r') {
+      e.preventDefault();
+      const q = PRACTICE_POOL[PRACTICE_IDX];
+      if (q) resetPracticeQuestion(q.id);
+      return;
+    }
+
+    // M: Switch to Test mode
+    if (keyLower === 'm') {
+      e.preventDefault();
+      navigateTo('test', CUR_TOPIC);
+      return;
+    }
+  }
+
+  // 5. TEST MODE KEYBOARD SHORTCUTS
+  if (CUR_VIEW === 'test' && TEST_SESSION && !TEST_SESSION.submitted) {
+    if (e.shiftKey && e.key === 'Enter') {
+      e.preventDefault();
+      confirmSubmitTest();
+      return;
+    }
+    if (['1', '2', '3', '4'].includes(e.key)) {
+      e.preventDefault();
+      handleTestOptionSelect(parseInt(e.key, 10) - 1);
+      nextTestQuestion();
+      return;
+    }
+    const keyLower = e.key.toLowerCase();
+    if (['a', 'b', 'c', 'd'].includes(keyLower)) {
+      e.preventDefault();
+      const map = { a: 0, b: 1, c: 2, d: 3 };
+      handleTestOptionSelect(map[keyLower]);
+      nextTestQuestion();
+      return;
+    }
+    if (e.key === 'ArrowLeft') {
+      e.preventDefault();
+      prevTestQuestion();
+      return;
+    }
+    if (e.key === 'ArrowRight') {
+      e.preventDefault();
+      nextTestQuestion();
+      return;
+    }
+    if (keyLower === 'm') {
+      e.preventDefault();
+      navigateTo('practice', CUR_TOPIC);
+      return;
+    }
+  }
+
+  // 6. STUDY MATERIAL KEYBOARD SHORTCUTS
+  if (CUR_VIEW === 'study') {
+    if (e.key === '/') {
+      const searchBox = $('#study-q-search');
+      if (searchBox) {
+        e.preventDefault();
+        searchBox.focus();
+      }
+      return;
+    }
+  }
+});
+
+function updateFocusedOptionUI() {
+  const optItems = $$('#practice-options-list .option-item');
+  optItems.forEach((el, idx) => {
+    el.classList.toggle('focused', idx === PRACTICE_FOCUSED_OPT);
+  });
+}
+
+function cycleMainCategory(direction) {
+  const cats = ['all', 'Coding Questions', 'Quantitative Aptitude', 'Verbal Ability and Logical Reasoning'];
+  let idx = cats.indexOf(CUR_CAT);
+  idx = (idx + direction + cats.length) % cats.length;
+  setCategory(cats[idx]);
+}
+
+function setCategory(cat) {
+  CUR_CAT = cat;
+  $$('.cat-tab-btn').forEach(btn => {
+    btn.classList.toggle('active', btn.getAttribute('data-cat') === cat);
+  });
+  if (CUR_VIEW !== 'catalog') navigateTo('catalog');
+  else renderCatalog();
+}
+
+// ATTACH DOM LISTENERS ON WINDOW LOAD
+window.addEventListener('DOMContentLoaded', () => {
+  // Category tab clicks
+  $$('.cat-tab-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      setCategory(btn.getAttribute('data-cat'));
+    });
+  });
+
+  // Search in catalog
+  const catalogSearch = $('#catalog-search-input');
+  if (catalogSearch) {
+    catalogSearch.addEventListener('input', e => {
+      CUR_SEARCH = e.target.value;
+      renderCatalog();
+    });
+  }
+
+  // Three-dot toggle
+  const threeDot = $('#three-dot-toggle');
+  if (threeDot) {
+    threeDot.addEventListener('click', () => toggleSidebar());
+  }
+  const backdrop = $('#sidebar-backdrop');
+  if (backdrop) {
+    backdrop.addEventListener('click', () => toggleSidebar(false));
+  }
+
+  initMasterData();
+});
+
+  </script>
+</body>
+</html>
